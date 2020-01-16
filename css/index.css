@@ -1,0 +1,19 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.navbar-nav > li {
+    position: relative;
+  }
+  .navbar-light .navbar-nav a.active::after {
+    border-bottom: 5px solid #5bc0eb;
+    bottom: -10px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
