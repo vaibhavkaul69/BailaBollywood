@@ -1,0 +1,102 @@
+/*******For screen that are greater than or equal to 1200px 
+(extra-Large Device screen width>=1200px********/
+
+@media  (min-width: 1200px)
+ {
+
+
+}
+
+ /*****For screen that are greater than 991px and less than 1200px 
+(Large Device screen 992px<=width<=1200px*********/
+
+@media (min-width: 992px) and (max-width: 1199.98px) 
+{
+        .navbar-nav
+        {
+          margin-right:10rem;
+        }
+        .image-gallery
+        {
+            width:230px;
+            height:350px;
+        } 
+       
+
+ }
+
+/*For screen that are greater than 767px and less than 991px 
+(Medium Device screen 768px<=width<=1200px*/
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+        .navbar-nav
+        {
+           margin-right: 0rem;
+           margin-bottom:1rem;
+        }
+        
+
+
+  }
+
+/*For screen that are greater than 576px and less than 768px 
+(Small Device screen 576<=width<=1200px*/
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+{
+        .navbar-nav
+        {
+          margin-right: 0rem;
+          margin-bottom:1rem;
+        }
+        .image-gallery
+        {
+          width:270px;
+          height:350px;
+        }
+
+
+  }
+
+/*For screen that are smaller that 576px 
+(Extra Small Device screen width<=576px*/
+
+@media (max-width: 575.98px)
+ {
+
+      .navbar-nav
+      {
+          margin-right: 0rem;
+          margin-bottom:1rem;
+      }
+        .image-gallery
+        {
+          width:200px;
+          height:300px;
+        }
+       
+        
+   }
+
+@media (max-width:435px)
+{
+      .image-gallery
+      {
+          height:250px;
+          width:150px;
+      }
+     
+     
+}
+
+
+@media (max-width:340px)
+{
+    .image-gallery
+    {
+      height:200px;
+      width:120px;
+    }
+    
+}

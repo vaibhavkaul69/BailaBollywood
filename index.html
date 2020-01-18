@@ -22,24 +22,86 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-        <!--Custom css files-->
+        <!------------------Font awesome Icons-----------------------------
+        <script src="https://kit.fontawesome.com/9e6ca22b5c.js" crossorigin="anonymous"></script>
+        ---------->
+
+        <!-------------------Custom css files------------------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!----------------------------Navbar Css Files---------------------->
+       <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+        <!---------------------------Google Fonts----------------------------------------->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
+        
+        <!-------------Css file of index.html-------------------------->
         <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <!---------------Css file for responsiveness------------------>
+        <link rel="stylesheet" type="text/css" href="css/responsive-breakpoints.css">
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+
+      <!------------------------------------Navigation Bar Section-One------------------------------------------>
+
+      <section class="baila-section section-one ">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+          <a class="navbar-brand" href="#"><img src="images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+              <li class="nav-item active">
+                <a class="nav-link text-center " href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center " href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center " href="#">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline  justify-content-center text-right">
+              <button class="btn btn-outline-primary mr-3   "><span><img src="images/login.gif" class="login-image"></span>&nbsp; Login</button>
+              <button class="btn btn-outline-primary ml-3   "><span><img src="images/login.gif" class="login-image"></span>&nbsp; Register</button>
+            </form>
+          </div>
+        </nav>
+          <div class=" container-header ">
+            <div class="jumbotron  text-center">
+              <i  class="fa text-white text-center like-icon">&#xf08a;</i>
+              <h1 class="display-4 text-center text-white">Welcome</h1>
+              <strong><p class="text-center display-1 text-white">To</p></strong>
+              <h2 class="display-4 text-center text-white">Baila Bollywood</h2>
+            </div>
+          </div>
+        </section>
+        
+        <section class="baila-section section-two">
+          <div class="container-fluid section_two-background">
+            <div class="row mt-5">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 column mb-3">
+             
+                <img class="image-gallery float-md-right float-sm-right " src="images/painting-1.jpg">
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 column mb-3">
+               
+                <img class="image-gallery float-lg-right" src="images/painting-5.jpg">
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 column mb-3">
+             
+                <img class="image-gallery float-lg-left  float-md-right float-sm-right " src="images/painting-4.jpg">
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 column mb-3">
+              
+                <img class="image-gallery" src="images/painting-2.jpg">
               </div>
             </div>
-          </nav>
+          </div>
+        </section>
+       
     </body>
 </html>
