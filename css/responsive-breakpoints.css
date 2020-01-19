@@ -20,8 +20,7 @@
         {
             width:230px;
             height:350px;
-        } 
-       
+        }
 
  }
 
@@ -35,7 +34,11 @@
            margin-right: 0rem;
            margin-bottom:1rem;
         }
-        
+         .image-gallery
+        {
+            width:300px;
+            height:400px;
+        } 
 
 
   }
@@ -75,7 +78,17 @@
           width:200px;
           height:300px;
         }
-       
+        .btn-primary,
+        .btn-success,
+        .btn-warning,
+        .btn-danger,
+        .btn-dark
+        {
+          margin:0px;
+         min-height:2px;
+         font-size:1rem;
+          min-width:1px;
+        }
         
    }
 
@@ -86,10 +99,7 @@
           height:250px;
           width:150px;
       }
-     
-     
 }
-
 
 @media (max-width:340px)
 {
@@ -98,5 +108,4 @@
       height:200px;
       width:120px;
     }
-    
 }

@@ -1,16 +1,21 @@
+
 *
 {
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif !important;
 }
 body
 {
     overflow-x:hidden;
 }
+.container
+{
+    padding:0px;
+}
 
-.jumbotron
+.hero-image
 {
     width:100%;
     height:100vh;
@@ -29,7 +34,7 @@ body
     font-weight:bolder;
     font-size: 5rem;
 }
-.like-icon
+.hero-image-like-icon
 {
     font-size:3rem;
 }
@@ -38,7 +43,7 @@ body
     width:300px;
     height:400px;
     border-radius:20px;
-    border:5px solid #fff;
+    border:1px solid #fff;
     box-shadow:2px 1px 10px 5px #0009;
 }
 .col
@@ -47,11 +52,11 @@ body
     width:200px;
     height:300px;
 }
-.section-two
+.section-one
 {
     margin-top:10rem;
 }
-.section_two-background
+.section_one-background
 {
     padding:20px;
     width:100%;
@@ -60,21 +65,62 @@ body
     background-size:cover;
 }
 
-.column
+
+.about-image
 {
-    position: relative;
+    width:220px;
+    height:200px;
+    shape-outside: circle(50%);
+    border-radius:50%;
 }
-.overlay
+
+.section-two
 {
-    position: absolute;
-    width:100%;
-    height:100%;
+    margin-top:calc(20rem - 10rem);
+    min-height:500px;
+}
+
+.section_two-about-us
+{
+    height:100vh;
+    background:#fff;
+    padding:0px;
+}
+.about_baila-bollywood
+{
+    font-size:1.5rem;
+    text-transform:capitalize;
+    font-weight:bolder;
+}
+.section-heading
+{
+    font-size:5rem;
+    font-weight:900;
+}
+.line
+{
+    width:150px;
+    height:2px;
     background:#0009;
-    opacity:0;
-    border-radius:20px;
-    border:3px solid white;
+    margin-left:auto;
+    margin-right:auto;
 }
-.column:hover .overlay
+
+.section-three
 {
-    opacity:1;
+    margin-top:10rem;
+}
+
+.btn-primary,
+.btn-success,
+.btn-warning,
+.btn-danger,
+.btn-dark
+{
+    margin:10px;
+    min-height:50px;
+    font-size:2rem;
+    font-weight:900;
+    width:50px;
+    color:white;
 }
