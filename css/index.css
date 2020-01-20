@@ -9,12 +9,18 @@
 body
 {
     overflow-x:hidden;
+    width:100%;
 }
 .container
 {
     padding:0px;
+    
 }
-
+.hero-image-icon
+{
+    height:200px;
+    width:200px;
+}
 .hero-image
 {
     width:100%;
@@ -38,6 +44,10 @@ body
 {
     font-size:3rem;
 }
+.section-one
+{
+    margin-top:10rem;
+}
 .image-gallery
 {
     width:300px;
@@ -52,16 +62,14 @@ body
     width:200px;
     height:300px;
 }
-.section-one
-{
-    margin-top:10rem;
-}
+
+
 .section_one-background
 {
     padding:20px;
     width:100%;
     height:auto;
-    background:url("../images/section-background.jpg");
+    
     background-size:cover;
 }
 
@@ -80,12 +88,15 @@ body
     min-height:500px;
 }
 
+
 .section_two-about-us
 {
     height:100vh;
     background:#fff;
     padding:0px;
 }
+
+
 .about_baila-bollywood
 {
     font-size:1.5rem;
@@ -101,7 +112,7 @@ body
 {
     width:150px;
     height:2px;
-    background:#0009;
+    background:#000;
     margin-left:auto;
     margin-right:auto;
 }
@@ -123,4 +134,20 @@ body
     font-weight:900;
     width:50px;
     color:white;
+}
+.section-four
+{
+    height:100vh;
+    margin-top:10rem;
+}
+
+.popular-artist
+{
+    height:100%;
+    width:100%;
+    margin:20px;
+}
+.row
+{
+    width:100%;
 }

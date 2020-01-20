@@ -89,6 +89,10 @@
          font-size:1rem;
           min-width:1px;
         }
+        .section-heading
+        {
+      font-size:2rem;
+        }
         
    }
 
@@ -108,4 +112,5 @@
       height:200px;
       width:120px;
     }
+    
 }
