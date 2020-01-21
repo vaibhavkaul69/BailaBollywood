@@ -4,18 +4,14 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: 'Titillium Web', sans-serif ;
 }
 body
 {
     overflow-x:hidden;
     width:100%;
 }
-.container
-{
-    padding:0px;
-    
-}
+
 .hero-image-icon
 {
     height:200px;
@@ -44,17 +40,21 @@ body
 {
     font-size:3rem;
 }
-.section-one
+.section-one,
+.section-two,
+.section-three,
+.section-four
 {
-    margin-top:10rem;
+  overflow: hidden;
+  width:100%;
+  margin-top:10rem;
 }
 .image-gallery
 {
-    width:300px;
-    height:400px;
-    border-radius:20px;
-    border:1px solid #fff;
-    box-shadow:2px 1px 10px 5px #0009;
+    width:100%;
+    height:100%;
+    border-radius:50px;
+    box-shadow:0 0 8px 0 rgba(17,22,26,.16), 0 4px 8px 0 rgba(17,22,26,.08), 0 8px 16px 0 rgba(17,22,26,.08)
 }
 .col
 {
@@ -69,11 +69,34 @@ body
     padding:20px;
     width:100%;
     height:auto;
-    
     background-size:cover;
 }
-
-
+.indian-classical-jumbotron
+{
+    background:#fff;
+    
+}
+.indian_dance-history,
+.about_us-paragraph
+{
+    font-size:1.2rem;
+    font-weight:bolder;
+    text-transform: capitalize;
+   
+}
+.indian_dance-history strong
+{
+    font-size:1.5rem;
+    font-size:bolder;
+    font-family:baskerville old face;
+    letter-spacing: 5px;
+    text-decoration:underline;
+}
+.traditional-dance-img
+{
+    height:200px;
+    width:300px;
+}
 .about-image
 {
     width:220px;
@@ -82,32 +105,12 @@ body
     border-radius:50%;
 }
 
-.section-two
-{
-    margin-top:calc(20rem - 10rem);
-    min-height:500px;
-}
-
-
 .section_two-about-us
 {
-    height:100vh;
     background:#fff;
     padding:0px;
 }
 
-
-.about_baila-bollywood
-{
-    font-size:1.5rem;
-    text-transform:capitalize;
-    font-weight:bolder;
-}
-.section-heading
-{
-    font-size:5rem;
-    font-weight:900;
-}
 .line
 {
     width:150px;
@@ -115,11 +118,6 @@ body
     background:#000;
     margin-left:auto;
     margin-right:auto;
-}
-
-.section-three
-{
-    margin-top:10rem;
 }
 
 .btn-primary,
@@ -135,19 +133,11 @@ body
     width:50px;
     color:white;
 }
-.section-four
-{
-    height:100vh;
-    margin-top:10rem;
-}
+
 
 .popular-artist
 {
     height:100%;
     width:100%;
-    margin:20px;
-}
-.row
-{
-    width:100%;
+    
 }
