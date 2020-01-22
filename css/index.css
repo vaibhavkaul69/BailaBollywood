@@ -4,6 +4,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Titillium Web', sans-serif ;
 }
 body
@@ -40,20 +41,23 @@ body
 {
     font-size:3rem;
 }
+
 .section-one,
 .section-two,
 .section-three,
-.section-four
+.section-four,
+.section-five
 {
   overflow: hidden;
   width:100%;
   margin-top:10rem;
 }
+
 .image-gallery
 {
     width:100%;
     height:100%;
-    border-radius:50px;
+    border-radius:20px;
     box-shadow:0 0 8px 0 rgba(17,22,26,.16), 0 4px 8px 0 rgba(17,22,26,.08), 0 8px 16px 0 rgba(17,22,26,.08)
 }
 .col
@@ -139,5 +143,90 @@ body
 {
     height:100%;
     width:100%;
+}
+
+.img-founder
+{
+    height:200px;
+    width:200px;
+    border-radius:50%;
     
+}
+.content-center
+{
+    margin-bottom:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to bottom,rgba(220, 36, 36, 0.6),rgba(1,1,1,0.7)), url("../images/red-forest-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.read-more-btn
+{
+    color:rgba(220, 36, 36, 1);
+    background:white;
+    height:30px;
+    line-height:1;
+
+}
+
+.footer-row
+{
+    min-height:300px;
+    background:rgba(0, 29, 56, 1);
+}
+.footer-left,
+.footer-center,
+.footer-right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    width:100%;
+    color:white;
+    
+}
+
+.social-icons i
+{
+    font-size:2rem;
+    padding:15px;
+    height:60px;
+    width:60px;
+    border:1px solid #fff;
+    margin:5px;
+}
+.fa-facebook:hover
+{
+    background: #3b5999;
+    border-color:#3b5999;
+}
+.fa-youtube:hover
+{
+    background:#cd201f;
+    border-color:#cd201f;
+}
+.fa-twitter:hover
+{
+    background:#55acee;
+    border-color:#55acee;
+}
+.fa-linkedin:hover
+{
+    background:#0077B5;
+    border-color:#0077B5;
+}
+.fa-instagram:hover
+{
+    background:#e4405f;
+    border-color:#e4405f;
+
+}
+.footer-right-img
+{
+    height:100px;
+    width:100px;
 }
