@@ -149,6 +149,7 @@ body
     background-image:linear-gradient(to right,#1D4350,#A43931);
     transform: 0.8s;
     font-size:2rem;
+     border-radius:50px;
 }
 .load-more:hover
 {
@@ -181,6 +182,7 @@ body
     color:#fff;
     background:rgba(220, 36, 36, 1);
     height:40px;
+   
    
 }
 .read-more-btn:hover
