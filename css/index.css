@@ -144,6 +144,18 @@ body
     height:100%;
     width:100%;
 }
+.load-more
+{
+    background-image:linear-gradient(to right,#1D4350,#A43931);
+    transform: 0.8s;
+    font-size:2rem;
+}
+.load-more:hover
+{
+    background-image:linear-gradient(to left,#1D4350,#A43931);
+    transform: 0.8s;
+}
+
 
 .img-founder
 {
@@ -156,6 +168,7 @@ body
 {
     margin-bottom:0;
     display: flex;
+    min-height:100vh;
     flex-direction: column;
     align-items: center;
     background:linear-gradient(to bottom,rgba(220, 36, 36, 0.6),rgba(1,1,1,0.7)), url("../images/red-forest-bg.jpg");
@@ -165,11 +178,15 @@ body
 }
 .read-more-btn
 {
+    color:#fff;
+    background:rgba(220, 36, 36, 1);
+    height:40px;
+   
+}
+.read-more-btn:hover
+{
     color:rgba(220, 36, 36, 1);
     background:white;
-    height:30px;
-    line-height:1;
-
 }
 
 .footer-row
@@ -198,6 +215,7 @@ body
     width:60px;
     border:1px solid #fff;
     margin:5px;
+    color:white;
 }
 .fa-facebook:hover
 {
@@ -229,4 +247,19 @@ body
 {
     height:100px;
     width:100px;
+    margin-top:7rem;
+    animation:rocket 1s ease infinite alternate;
+    transition:all 0.5s ease;
+}
+
+@keyframes rocket
+{
+    0%
+    {
+        transform:translateY(-50px);
+    }
+    100%
+    {
+        transform:translateY(0px);
+    }
 }

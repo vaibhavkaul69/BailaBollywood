@@ -23,12 +23,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-        <!------------------Font awesome Icons-----------------------------
-        <script src="https://kit.fontawesome.com/9e6ca22b5c.js" crossorigin="anonymous"></script>
-        ---------->
+
+        
 
         <!-------------------Custom css files------------------------------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
         <!---------------------------Google Fonts----------------------------------------->
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
@@ -50,26 +49,36 @@
       <!------------------------------------Navigation Bar Section-One------------------------------------------>
 
       <nav id="nav-header" class="navbar navbar-expand-lg navbar-light sticky-top  ">
-        <a class="navbar-brand" href="#"><img src="images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-          <ul class="navbar-nav ">
-            <li class="nav-item active">
-              <a class="nav-link text-center text-white " href="#">Home <span class="sr-only">(current)</span></a>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+          <ul class="navbar-nav nav nav-pills ">
+            <li class="nav-item m-xl-2 active">
+              <a class="nav-link text-center text-white " href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-center text-white " href="#">Contact Us</a>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center text-white " href="#about">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-center text-white " href="#">Dummy-link</a>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center text-white " href="#srch-alpha">Search By Alphabet</a>
             </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center text-white " href="#pop-categ">Most Popular Categories</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center text-white " href="#found-note">Founders's Note</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center text-white " href="html/contact-us.html">Contact Us</a>
+            </li>
+            
           </ul>
-          <form class="form-inline  justify-content-center text-right">
-            <button class="btn btn-outline-primary mr-3 login-btn   "><span><img src="images/login.gif" class="login-image"></span>&nbsp; Login</button>
-            <button class="btn btn-outline-primary ml-3  register-btn  "><span><img src="images/login.gif" class="login-image"></span>&nbsp; Register</button>
+          <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
+            <a class="btn btn-outline-primary mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="#" target="_blank"><i class="fa fa-sign-in"></i> Login</a>
+            <a class="btn btn-outline-primary ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="#" target="_blank"><i class="fa fa-user-plus"></i> Register</a>
           </form>
         </div>
       </nav>
@@ -84,8 +93,9 @@
           </div>
 
           
-        <!------------------Image Gallery Section-two------------------------->
-        <section class="baila-section section-one">
+ <div data-spy="scroll" data-target="nav-header" data-offset="0">
+          <!------------------Image Gallery Section-two------------------------->
+        <section class="baila-section section-one" >
           <div class="container section_one-background">
             <div class="jumbotron indian-classical-jumbotron text-center p-0">
               <h2 class="display-3">Classical Indian Dance</h2>
@@ -137,19 +147,21 @@
               </div>
             </div>
           </div>
+          <a id="about">
         </section>
 
       <!------------------About Us Section-three-------------------------->
-      <section class="baila-section section-two">
+      
+      <section class="baila-section section-two" >
         <div class="container">
           <div class="jumbotron section_two-about-us text-center  ">
-            <h2 class="about-heading display-4 section-heading  ">
+            <h2 class="about-heading display-2 section-heading  ">
                About
                <br>
                Baila Bollywood
               </h2>
               <div class="line mt-3 mb-5 "></div>
-           <img class="about-image d-inline float-left m-xl-3 m-lg-3 m-md-3 m-sm-3 m-0" alt="Logo Of Baila Bollywood" src="images/dummy-image.png">
+           <img class="about-image d-inline float-left m-xl-3 m-lg-3 m-md-3 m-sm-3 m-2" alt="Logo Of Baila Bollywood" src="images/dummy-image.png">
             <p class="about_us-paragraph text-justify">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
               Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
               cuando un impresor
@@ -157,6 +169,8 @@
                 desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
                  No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, 
                  quedando esencialmente igual al original.
+                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.....
                   
   
             </p>
@@ -164,11 +178,14 @@
         </div>
 
         </div>
+      </a>
+      <a id="srch-alpha">
       </section>
+   
 
        <!---------------------Alphabet Search Section-Three-------------------------->
         
- <section class="baila-section section-three">
+ <section class="baila-section section-three" >
     <div class="container">
         <h2 class="srch-alphabet display-2 text-center ">Buscar Por Alfabeto</h2>
         <p class="text-center"> Search Your Favourite Songs By <strong>Alphabet</strong></p>
@@ -214,16 +231,18 @@
        </div>
           
     </div>
+  </a>
+  <a id="pop-categ">
   </section>
 
   <!----------------- Most Popular Categories Section-4----------------->
 
-    <section class="baila-section section-four">
-      <h2 class="display-2 text-center">Discover</h2>
+    <section class="baila-section section-four" >
+      <h2 class="display-2 popular-artist-heading text-center">Discover</h2>
       <div class="line mt-4 mb-4"></div>
       <h3 class="display-3 text-center">Most Popular Artists</h3>
 
-      <div class="container-fluid mt-5">
+      <div class="container mt-5">
 
         <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6  mt-2">
@@ -259,7 +278,7 @@
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6  mt-2">
             <img class="popular-artist" src="images/dummy-image.png" alt="Thumbnail of a popular artist">
           </div>
-           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 mt-2">
+           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6  mt-2">
             <img class="popular-artist" src="images/dummy-image.png" alt="Thumbnail of a popular artist">
           </div>
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6  mt-2">
@@ -267,18 +286,26 @@
           </div>
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6  mt-2">
             <img class="popular-artist" src="images/dummy-image.png" alt="Thumbnail of a popular artist">
+          </div>
+        </div>
+
+        <div class="row mt-5">
+        <a class=" w-100 load-more btn btn-outline-light font-weight-bold text-white" href="#" target="_blank" title="Load More Videos">Load More.</a>
           </div>
         </div>
       </div>
+    </a>
+   
     </section>
-
+ 
     <!-----------------About Founder Section-5---------------------------------->
-    <section class="baila-section section-five">
+    <section class="baila-section section-five" id="found-note">
       <div class="container-fluid p-0">
         <div class="jumbotron  content-center ">
           <h3 class="font-weight-light text-center display-2 text-white">Our Founder</h3>
-          <div class="line mb-3 bg-white"></div>
-          <img src="images/founder.png" class="img-founder mb-3 mt-2 " alt="Image of founder">
+          <h4 class="font-weight-light text-center display-4 font-weight-bold text-white">Subhas Yadav</h4>
+          <div class="line mt-2 mb-2  bg-white"></div>
+          <img src="images/founder.png" class="img-founder mt-2 mb-2 justify-content-center " alt="Image of founder">
           <p class="text-center text-white font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -288,10 +315,15 @@
                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.....
    
               </p>
-              <a href="https://www.linkedin.com/in/subhasy/" target="_blank" class="btn btn-light read-more-btn font-weight-bold ">Read More</a>
-        </div>
+              <div class="social-icons">
+              <a href="https://www.linkedin.com/in/subhasy/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/subhas_yadav" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
       </div>
     </section>
+   
+ 
 
     <!-------------------Footer Section-six-------------------------------->
     <section class="baila-section section-six">
@@ -313,11 +345,12 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 footer-right">
-            <img src="images/logo_white.png" class="footer-right-img mt-5">
+            <img src="images/logo_white.png" class="footer-right-img ">
           </div>
         </div>
       </div>
     </section>
+  </div>
     </body>
     <script src="scripts/sticky-navbar.js"></script>
 </html>

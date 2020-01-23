@@ -43,23 +43,40 @@
     <body>
       <!-------------------------------Navigation bar Section-one-------------------------------------->
       <section class="baila-section section-one">
-        <nav class="navbar navbar-expand-lg ">
-          <a class="navbar-brand" href="../index.html"><img class="img-fluid" src="../images/dummy-image.png" alt="Baila-Bollywood-Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="../images/toggle-icon-image.jpg" class="toggle-image rounded">
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link " href="../index.html">Home </a>
-                <a class="nav-item nav-link " href="#">About Us</a>
-                <a class="nav-item nav-link active" href="#">Contact Us</a>
-                <a class="nav-item nav-link  " href="#">Disabled</a>
-              </div>
-            </div>
-            <a class="btn btn-outline-primary login-btn" role="button" href="https://www.google.com/" target="_blank"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
-            <div class="line"></div>
-            <a class="btn btn-outline-primary register-btn" role="button" href="https://www.google.com/" target="_blank"><i class="fas fa-user-plus mr-2"></i>Register</a>
-          </nav>
+        <nav id="nav-header" class="navbar navbar-expand-lg navbar-light sticky-top  ">
+          <a class="navbar-brand" href="../index.html"><img src="../images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+            <ul class="navbar-nav nav nav-pills ">
+              <li class="nav-item m-xl-2 active">
+                <a class="nav-link text-center text-white " href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item m-xl-2">
+                <a class="nav-link text-center text-white " href="../index.html#about">About Us</a>
+              </li>
+              <li class="nav-item m-xl-2">
+                <a class="nav-link text-center text-white " href="../index.html#srch-alpha">Search By Alphabet</a>
+              </li>
+              <li class="nav-item m-xl-2">
+                <a class="nav-link text-center text-white " href="../index.html#pop-categ">Most Popular Categories</a>
+              </li>
+              <li class="nav-item m-xl-2">
+                <a class="nav-link text-center text-white " href="../index.html#found-note">Founders's Note</a>
+              </li>
+              <li class="nav-item m-xl-2">
+                <a class="nav-link text-center text-white " href="contact-us.html">Contact Us</a>
+              </li>
+              
+            </ul>
+            <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
+              <a class="btn btn-outline-primary mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="#" target="_blank"><i class="fa fa-sign-in"></i> Login</a>
+              <a class="btn btn-outline-primary ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="#" target="_blank"><i class="fa fa-user-plus"></i> Register</a>
+            </form>
+          </div>
+        </nav>
         </section>
     </body>
 </html>
