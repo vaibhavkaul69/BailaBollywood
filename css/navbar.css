@@ -15,13 +15,9 @@ navbar-light
   font-weight: 100;
   color:#fff;
 }
-.navbar-toggler
+.navbar-toggler-icon
 {
-  background:url("../images/toggle-icon-image.jpg");
-  height:50px;
-  background-size:cover;
-  margin-right:10px;
-  width:50px;
+  color:white;
 }
 
 .logo-navbar

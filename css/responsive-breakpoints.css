@@ -21,7 +21,7 @@
 
  }
 
- @media (max-width:1060px)
+ @media (max-width:1078px)
  {
           .log-reg-btn
         {
@@ -62,6 +62,10 @@
         {
                  margin-top:20px;
         }
+        .login-right-image-content
+        {
+                display:none;
+        }
 
 
   }
@@ -88,6 +92,10 @@
          min-height:2px;
          font-size:1rem;
           min-width:1px;
+        }
+        .login-right-image-content
+        {
+                display:none;
         }
         
         

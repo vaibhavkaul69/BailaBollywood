@@ -1,0 +1,68 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Titillium Web', sans-serif ;
+}
+
+body
+{
+    overflow-y:hidden;
+}
+.login-right-image-content
+{
+    height:100vh;
+    background-image:linear-gradient(to bottom,rgba(2, 27, 121, 0.5),rgba(236, 47, 75, 0.5)),url("../images/login-background.jpg");
+    background-size:cover;
+    border-radius: 0px;
+    background-repeat:no-repeat;
+}
+.form-column
+{
+    height:100vh;
+}
+.form-text
+{
+    
+    color:#373B44;
+    font-size:0.9rem;
+}
+.line
+{
+    height:1px;
+    width:100px;
+    background:rgba(220, 36, 36, 1);
+    margin-left:auto;
+    margin-right:auto;
+}
+.email-label,
+.pass-label
+{
+    position:relative;
+    top:25px;
+    left:20px;
+    color:rgba(220, 36, 36, 1);
+    font-size:1.5rem;
+}
+.form-control
+{
+    height:60px;
+    border:1px solid #373B44;
+}
+
+.form-control:focus
+{
+    border-color:rgba(220, 36, 36, 1);
+}
+
+.btn-login,
+.btn-register
+{
+    font-size:1.3rem;
+    font-weight:bold;
+    border:none;
+    width:100%;
+    background:linear-gradient(to right,rgba(2, 27, 121, 0.7),#ec2F4B);
+}
+
