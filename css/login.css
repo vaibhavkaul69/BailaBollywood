@@ -10,6 +10,7 @@
 .login-right-image-content
 {
     height:100vh;
+    margin-bottom: 0px;
     background-image:linear-gradient(to bottom,rgba(2, 27, 121, 0.5),rgba(236, 47, 75, 0.5)),url("../images/login-background.jpg");
     background-size:cover;
     border-radius: 0px;
