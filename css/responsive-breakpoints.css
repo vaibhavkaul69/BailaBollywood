@@ -48,6 +48,10 @@
         {
                  margin-top:20px;
         }
+        .login-right-image-content
+        {
+              display:none;
+        }
 
 
   }
@@ -64,8 +68,10 @@
         }
         .login-right-image-content
         {
-                display:none;
+              display:none;
         }
+
+       
 
 
   }
@@ -95,8 +101,9 @@
         }
         .login-right-image-content
         {
-                display:none;
+              display:none;
         }
+
         
         
    }
