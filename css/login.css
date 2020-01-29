@@ -36,7 +36,10 @@
     margin-right:auto;
 }
 .email-label,
-.pass-label
+.pass-label,
+.phone-label,
+.name-label,
+.mystery-label
 {
     position:relative;
     top:25px;
@@ -54,7 +57,16 @@
 {
     border-color:rgba(220, 36, 36, 1);
 }
+.mysteryBtn
+{
+    border:1px solid #ec2F4B;
+    padding:5px;
+    cursor:pointer;
+    box-sizing:border-box;
+    filter:drop-shadow(2px 2px 2px rgba(2, 27, 121, 0.7));
+    font-weight:900;
 
+}
 .btn-login,
 .btn-register
 {

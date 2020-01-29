@@ -48,7 +48,7 @@
     <body>
      <!------------------------------------Navigation Bar Section-One------------------------------------------>
 
-     <nav id="nav-header" class="navbar navbar-expand-lg navbar-light fixed-top sticky-top  ">
+     <nav id="nav-header" class="navbar navbar-expand-lg navbar-light  sticky-top  ">
       <a class="navbar-brand" href="../index.html"><img src="../images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -76,71 +76,85 @@
           </li>
           
         </ul>
-        <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
+        <form  class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
           <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="login.html" target="_top"><i class="fa fa-sign-in"></i> Login</a>
           <a class="btn  ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="register.html" target="_top"><i class="fa fa-user-plus"></i> Register</a>
         </form>
       </div>
     </nav>
-      
-    <!---------------------------------Login Menu------------------------------------->
-    <section class="login-section" id="loginMenu">
-      <div class="container-fluid">
-        
-        <div class="row container-row ">
+
+     <!-----------------------------Register-Menu--------------------------------------->
+     <section class="register-section" id="registerMenu">
+        <div class="container-fluid">
           
-          <div class="col-xl-4 col-lg-4 form-column d-flex align-items-center justify-content-center flex-column">
-            <div class="display-4   text-center">Sign In</div>
-            <form class="w-100 ">
+          <div class="row container-row ">
+            
+            <div class="col-xl-8 col-lg-8 jumbotron login-right-image-content ">
+              <h1 class=" text-white text-center mt-5 font-italic font-weight-bold">“Hay sólo dos maneras de vivir tu vida. Una es como si nada fuera un milagro. La otra es como si todo fuera un milagro”.</h1>
+  
+            </div>
+            <div class="col-xl-4 col-lg-4 form-column   ">
+              <form  method="" action="">
+              <div class="display-4   text-center">Sign Up</div>
+              <div class="w-100 ">
+  
+                <div class="form-group ">
+                  <label for="txtname"  class="bg-white name-label">Name</label>
+                  <input type="text"  required class="form-control" id="txtname" placeholder="Enter Your Name">
+                </div>
+  
+                <div class="form-group ">
+                  <label for="txtmail"  class="bg-white email-label">Email</label>
+                  <input type="email" required class="form-control" id="txtmail" placeholder="Enter Your Email">
+                </div>
+  
+                <div class="form-group ">
+                  <label for="txtnum"  class="bg-white phone-label">Phone Number</label>
+                  <input type="number" required maxlength="10" class="form-control" id="txtnum" placeholder="Enter Your Phone Number">
+                </div>
+  
+                <div class="form-group">
+                  <label for="txtpass"  class="bg-white pass-label">Password</label>
+                  <input type="password" required  minlength="8" autocomplete="on" class="form-control" id="txtpass" placeholder="Enter Your Password">
+                 </div>
 
-              <div class="form-group ">
-                <label for="formGroupExampleInput" class="bg-white email-label">Email</label>
-                <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Email">
+                 <div class="form-group">
+                  <label for="txt"  class="bg-white mystery-label">Mystery Box</label>
+                  <input type="text"  class="form-control" id="txtMystery" readonly >
+                 </div>
+
+                 <div class="form-group d-flex justify-content-center">
+                  <a class="mysteryBtn" onclick="mysteryNumber()">Generate Mystery Number</a>
+                 </div>
+  
+           <div class="form-group mt-5">
+             <div class="row">
+                  <div class="col">
+                <a class="btn-login btn text-white " href="login.html" target="_top">Login</a>
               </div>
-
-              <div class="form-group">
-                <label for="formGroupExampleInput2 " class="bg-white pass-label">Password</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Password">
-                
-                <a href="#" target="_top" title="Recover Your Password"><small id="emailHelp" class="form-text  font-italic forgot-pass text-right"><strong>Forgot Your Password?</strong></small></a>
+              <div class="col">
+                <!------------Take the user back to the Login screen when succesfully registered------->
+                <a href="#" target="_top"><input type="button" class="btn-register btn text-white " onclick="saveFile()" value="Register"></a>
+              </div>
             </div>
-
-            <div class="form-group ">
-              <a class="btn-login btn text-white " href="#" target="_top">Login</a>
-            </div>
-
-            <div class="line "></div>
-
-            <small id="emailHelp" class="form-text  font-italic  text-right"><strong>New User?</strong></small>
-            <div class="form-group  ">
-              <a class="btn-register btn text-white" href="register.html" target="_top">Register</a>
-            </div>
-            </form>
-
           </div>
-          <div class="col-xl-8 col-lg-8   jumbotron login-right-image-content ">
-            <h1 class=" text-white text-center mt-5 font-italic font-weight-bold">“Hay sólo dos maneras de vivir tu vida. Una es como si nada fuera un milagro. La otra es como si todo fuera un milagro”.</h1>
+        </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="forgot-pass" id="forgotPassword">
-      <div class="container">
-        
-      </div>
-    </section>
-
+      </section>
+      </body>
+      <script src="../scripts/sticky-navbar.js"></script>
+      <script src="../scripts/validate-register-form-and-download-data.js"></script>
    
-    </body>
-    <script src="../scripts/sticky-navbar.js"></script>
-   
-    <!-------------------------bootstrap javascript----------------------------->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="../scripts/bootstrap.min.js"></script>
-    
+        <script>
+    function mysteryNumber() 
+    {
+        var x= document.getElementById("txtMystery");
+        x.setAttribute("value", Math.floor(Math.random()*10000 ));
+  
+    }
+</script>
+      </script>
 
-    </html>
-
-
-    
+      </html>
