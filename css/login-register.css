@@ -8,10 +8,21 @@
 
 
 .login-right-image-content
+
 {
     height:100vh;
     margin-bottom: 0px;
     background-image:linear-gradient(to bottom,rgba(2, 27, 121, 0.5),rgba(236, 47, 75, 0.5)),url("../images/login-background.jpg");
+    background-size:cover;
+    border-radius: 0px;
+    padding-top:100px;
+    background-repeat:no-repeat;
+}
+.register-left-image-content
+{
+    height:140vh;
+    margin-bottom: 0px;
+    background-image:linear-gradient(to bottom,rgba(255, 252, 0, 0.1),#0009),url("../images/register-menu-bg.jpg");
     background-size:cover;
     border-radius: 0px;
     padding-top:100px;
@@ -59,13 +70,35 @@
 }
 .mysteryBtn
 {
-    border:1px solid #ec2F4B;
-    padding:5px;
-    cursor:pointer;
+    border:none;
+    padding:10px;
+    color:rgba(220, 36, 36, 1);
+    background:transparent;
+    border:1px solid #0009;
+    filter:drop-shadow(2px 2px 2px rgba(2, 27, 121, 0.5));
     box-sizing:border-box;
-    filter:drop-shadow(2px 2px 2px rgba(2, 27, 121, 0.7));
+    cursor:pointer;
     font-weight:900;
+    animation:scale-up 0.8s infinite alternate;
 
+}
+
+@keyframes scale-up
+{
+    0%
+    {
+        transform:scale(1);
+     
+     border-radius:20px 0px 20px 0px;
+        
+    }
+    100%
+    {
+        transform:scale(1.1);
+          
+           border-radius:0px 20px 0px 20px;
+      
+    }
 }
 .btn-login,
 .btn-register
@@ -77,3 +110,22 @@
     background:linear-gradient(to right,rgba(2, 27, 121, 0.7),#ec2F4B);
 }
 
+.animated-rocket
+{
+    height:100px;
+    width:100px;
+    animation:rocket 1s ease infinite alternate;
+    transition:all 0.5s ease;
+}
+
+@keyframes rocket
+{
+    0%
+    {
+        transform:translateY(-50px);
+    }
+    100%
+    {
+        transform:translateY(0px);
+    }
+}

@@ -26,9 +26,9 @@
         <!---------------------------Google Fonts----------------------------------------->
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
        
-        <!------------------Social Media Icons------------------------>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+      <!-------------------------------------Font Awesome Icons----------------------------------------->
+      <script src="../scripts/all.min.js"></script>
+       <script src="../scripts/fontawesome.min.js"></script>
        
 
         <!-------------------Custom css files------------------------------->
@@ -37,10 +37,14 @@
        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
 
        <!---------------------------------Login css Files--------------------------->
-       <link rel="stylesheet" type="text/css" href="../css/login.css">
+       <link rel="stylesheet" type="text/css" href="../css/login-register.css">
 
        <!---------------Css file for responsiveness------------------>
        <link rel="stylesheet" type="text/css" href="../css/responsive-breakpoints.css">
+
+      
+
+       
 
         
         
@@ -71,14 +75,12 @@
           <li class="nav-item m-xl-2">
             <a class="nav-link text-center text-white " href="../index.html#found-note">Founders's Note</a>
           </li>
-          <li class="nav-item m-xl-2">
-            <a class="nav-link text-center text-white " href="contact-us.html">Contact Us</a>
-          </li>
+          
           
         </ul>
         <form  class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
-          <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="login.html" target="_top"><i class="fa fa-sign-in"></i> Login</a>
-          <a class="btn  ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="register.html" target="_top"><i class="fa fa-user-plus"></i> Register</a>
+          <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="login.html" target="_top"><i class="fas fa-sign-in-alt"></i> Login</a>
+          <a class="btn  ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="register.html" target="_top"><i class="fas fa-user-plus"></i> Register</a>
         </form>
       </div>
     </nav>
@@ -89,55 +91,61 @@
           
           <div class="row container-row ">
             
-            <div class="col-xl-8 col-lg-8 jumbotron login-right-image-content ">
-              <h1 class=" text-white text-center mt-5 font-italic font-weight-bold">“Hay sólo dos maneras de vivir tu vida. Una es como si nada fuera un milagro. La otra es como si todo fuera un milagro”.</h1>
-  
+            <div class="col-xl-8 col-lg-8 jumbotron register-left-image-content d-flex flex-column justify-content-center align-items-center  ">
+              <div class=" animated-rocket-section  ">
+                <img src="../images/logo_white.png" class="animated-rocket ">
+              </div>
+              <h1 class=" text-white text-center mt-3   font-italic font-weight-bold">When you dance, your purpose is not to get to a certain place on the floor. It's to enjoy each step along the way</h1>
+              
             </div>
             <div class="col-xl-4 col-lg-4 form-column   ">
-              <form  method="POST" action="../form-data.txt">
-              <div class="display-4   text-center">Sign Up</div>
+              <form class="mt-4" method="" action="../insertDB.js">
+              <div class="display-4   text-center"><i style="color:#ec2F4B;" class="fa fa-user-plus mr-3"></i> Sign Up</div>
               <div class="w-100 ">
   
                 <div class="form-group ">
-                  <label for="txtname"  class="bg-white name-label">Name</label>
+                  <label for="txtname"  class="bg-white name-label"> <i style="color:#00F260 ;" class="fa fa-user ml-1 mr-2"></i>Name</label>
                   <input type="text"  required class="form-control" id="txtname" placeholder="Enter Your Name">
                 </div>
   
                 <div class="form-group ">
-                  <label for="txtmail"  class="bg-white email-label">Email</label>
-                  <input type="email" required class="form-control" id="txtmail" placeholder="Enter Your Email">
+                  <label for="txtmail"  class="bg-white email-label"><i style="color:#f7b733 ;" class="fa fa-envelope ml-1 mr-2"></i> Email</label>
+                  <input type="email"  required class="form-control" id="txtmail" placeholder="Enter Your Email">
                 </div>
   
                 <div class="form-group ">
-                  <label for="txtnum"  class="bg-white phone-label">Phone Number</label>
-                  <input type="number" required maxlength="10" class="form-control" id="txtnum" placeholder="Enter Your Phone Number">
+                  <label for="txtnum"  class="bg-white phone-label"><i style="color:#ec38bc ;" class="fa fa-phone-square ml-1 mr-2"></i>Phone Number</label>
+                  <input type="number" onKeyPress="if(this.value.length==10) return false;" class="form-control" id="txtnum" placeholder="Enter Your Phone Number">
                 </div>
   
                 <div class="form-group">
-                  <label for="txtpass"  class="bg-white pass-label">Password</label>
-                  <input type="password" required  minlength="8" autocomplete="on" class="form-control" id="txtpass" placeholder="Enter Your Password">
+                  <label for="txtpass"  class="bg-white pass-label"><i style="color:#667db6 ;" class="fa fa-key ml-1 mr-2"></i>Password</label>
+                  <input type="password" required  class="form-control" id="txtpass" placeholder="Enter Your Password">
+                  <small id="passwordHelpBlock" class="form-text text-muted text-left">
+                    <b>*&nbsp;</b>The Password Should be atleast <b>8 Characters</b> Long. 
+                    </small>
                  </div>
 
-                 <div class="form-group">
-                  <label for="txt"  class="bg-white mystery-label">Mystery Box</label>
-                  <input type="text"  class="form-control" id="txtMystery" readonly >
+                 <div class="form-group mb-4">
+                  <label for="txtMystery"  class="bg-white mystery-label"><i style="color:#cc5333;" class="fas fa-hat-wizard ml-1 mr-2"></i>Mystery Box</label>
+                  <input type="text"  class="form-control" required id="txtMystery" readonly >
+                  <small id="passwordHelpBlock" class="form-text text-muted text-left">
+                  <b>*&nbsp;</b>Click on the button below to generate your mystery number only <b>Once</b>.
+                  </small>
                  </div>
 
-                 <div class="form-group d-flex justify-content-center">
-                  <a class="mysteryBtn" onclick="mysteryNumber()">Generate Mystery Number</a>
+                 <div class="form-group mb-4  d-flex justify-content-center" >
+                  <a class="mysteryBtn" id="btnMystery" onclick="mysteryNumber()">Generate Mystery Number</a>
                  </div>
   
-           <div class="form-group mt-5">
-             <div class="row">
-                  <div class="col">
+           <div class="form-group ">
+                  <!------------Take the user back to the Login screen when succesfully registered------->
+            <a href="#" target="_top"><input type="submit" class="btn-register btn text-white " onclick="saveFile()" value="Register"></a>
+
+            <small id="emailHelp" class="form-text mt-3 mb-3 font-italic  text-left"><strong>Already a User<i style="color:#ec2F4B;" class="fas fa-laugh-beam ml-1"></i></strong></small>
+                    
                 <a class="btn-login btn text-white " href="login.html" target="_top">Login</a>
-              </div>
-              <div class="col">
-                <!------------Take the user back to the Login screen when succesfully registered------->
-                <a href="#" target="_top"><input type="submit" class="btn-register btn text-white " onclick="saveFile()" value="Register"></a>
-              </div>
-            </div>
-          </div>
+           </div>
         </form>
             </div>
           </div>
@@ -152,8 +160,11 @@
     {
         var x= document.getElementById("txtMystery");
         x.setAttribute("value", Math.floor(Math.random()*10000 ));
-  
+        document.getElementById('btnMystery').style.display="none";
+        
     }
+
+   
 </script>
       <!-------------------------bootstrap javascript----------------------------->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

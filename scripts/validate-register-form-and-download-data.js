@@ -1,4 +1,4 @@
-let saveFile = () => 
+function saveFile() 
         {
          
           
@@ -13,11 +13,13 @@ let saveFile = () =>
           var mailSize=mail.value.length;
           var numberSize=number.value.length;
           var passwordSize=password.value.length;
+          var mysteryBoxSize=mysteryNumber.value.length;
             
-            if(nameSize>0 && mailSize>0 && numberSize>0 && passwordSize>0)
-            {
-            // This variable stores all the data.
-            let data = 
+            
+              if(nameSize>0 && mailSize>0 && numberSize>0 && passwordSize>=8 && mysteryBoxSize>0)
+              {
+                  // This variable stores all the data.
+            let data = 'The Registeration Details of '+ name.value.toUpperCase() + ' are :' + '\r\n '+
                 '\r Name: ' + name.value + ' \r\n ' + 
                 'Email: ' + mail.value + ' \r\n ' + 
                 'Number: ' + number.value + ' \r\n ' + 
@@ -41,9 +43,14 @@ let saveFile = () =>
             }
     
             newLink.click(); 
+            return true;
+            
           }
           else
           {
-            alert("PLEASE ENTER ALL THE DETAILS");
+             
+              saveFile();
           }
         }
+          
+     

@@ -26,9 +26,10 @@
         <!---------------------------Google Fonts----------------------------------------->
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
        
-        <!------------------Social Media Icons------------------------>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!------------------Font Awesome Icons------------------------>
+        <script src="../scripts/all.min.js"></script>
+        <script src="../scripts/fontawesome.min.js"></script>
+ 
        
 
         <!-------------------Custom css files------------------------------->
@@ -37,7 +38,7 @@
        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
 
        <!---------------------------------Login css Files--------------------------->
-       <link rel="stylesheet" type="text/css" href="../css/login.css">
+       <link rel="stylesheet" type="text/css" href="../css/login-register.css">
 
        <!---------------Css file for responsiveness------------------>
        <link rel="stylesheet" type="text/css" href="../css/responsive-breakpoints.css">
@@ -77,7 +78,7 @@
           
         </ul>
         <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
-          <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="login.html" target="_top"><i class="fa fa-sign-in"></i> Login</a>
+          <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="login.html" target="_top"><i class="fas fa-sign-in-alt mr-1"></i>Login</a>
           <a class="btn  ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="register.html" target="_top"><i class="fa fa-user-plus"></i> Register</a>
         </form>
       </div>
@@ -90,28 +91,28 @@
         <div class="row container-row ">
           
           <div class="col-xl-4 col-lg-4 form-column d-flex align-items-center justify-content-center flex-column">
-            <div class="display-4   text-center">Sign In</div>
-            <form class="w-100 ">
+            <div class="display-4   text-center"><i style="color:#ec2F4B;" class="fas fa-sign-in-alt mr-3"></i>&nbsp;Sign In</div>
+            <form class="w-100 needs-validation ">
 
               <div class="form-group ">
-                <label for="formGroupExampleInput" class="bg-white email-label">Email</label>
+                <label for="formGroupExampleInput" class="bg-white email-label"><i style="color:#f7b733 ;" class="fa fa-envelope ml-1 mr-2"></i>Email</label>
                 <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Email">
               </div>
 
               <div class="form-group">
-                <label for="formGroupExampleInput2 " class="bg-white pass-label">Password</label>
+                <label for="formGroupExampleInput2 " class="bg-white pass-label"><i style="color:#667db6 ;" class="fa fa-key ml-1 mr-2"></i>Password</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Password">
                 
-                <a href="#" target="_top" title="Recover Your Password"><small id="emailHelp" class="form-text  font-italic forgot-pass text-right"><strong>Forgot Your Password?</strong></small></a>
+                <a href="#" target="_top"  title="Recover Your Password"><small id="emailHelp" class="form-text mt-3 mb-3  font-italic forgot-pass text-right"><strong>Forgot Your Password<i style="color:#ec2F4B;" class="fas fa-question ml-1"></i></strong></small></a>
             </div>
 
             <div class="form-group ">
               <a class="btn-login btn text-white " href="#" target="_top">Login</a>
             </div>
 
-            <div class="line "></div>
+         
 
-            <small id="emailHelp" class="form-text  font-italic  text-right"><strong>New User?</strong></small>
+            <small id="emailHelp" class="form-text mt-3 mb-3 font-italic  text-right"><strong>New User<i style="color:#00F260 ;" class="fas fa-grin-hearts ml-1"></i></strong></small>
             <div class="form-group  ">
               <a class="btn-register btn text-white" href="register.html" target="_top">Register</a>
             </div>
@@ -119,7 +120,12 @@
 
           </div>
           <div class="col-xl-8 col-lg-8   jumbotron login-right-image-content ">
-            <h1 class=" text-white text-center mt-5 font-italic font-weight-bold position-fixed">“Hay sólo dos maneras de vivir tu vida. Una es como si nada fuera un milagro. La otra es como si todo fuera un milagro”.</h1>
+            <div class=" animated-rocket-section d-flex justify-content-center align-items-center">
+              <img src="../images/logo_white.png" class="animated-rocket ">
+            </div>
+            <h1 class=" text-white text-center  mt-5 font-italic font-weight-bold">When you dance, your purpose is not to get to a certain place on the floor. It's to enjoy each step along the way</h1>
+            
+          </div>
           </div>
         </div>
       </div>

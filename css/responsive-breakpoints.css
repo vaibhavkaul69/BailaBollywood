@@ -48,7 +48,8 @@
         {
                  margin-top:20px;
         }
-        .login-right-image-content
+        .login-right-image-content,
+        .register-left-image-content
         {
               display:none;
         }
@@ -66,7 +67,8 @@
         {
                  margin-top:20px;
         }
-        .login-right-image-content
+        .login-right-image-content,
+        .register-left-image-content
         {
               display:none;
         }
@@ -99,7 +101,8 @@
          font-size:1rem;
           min-width:1px;
         }
-        .login-right-image-content
+        .login-right-image-content,
+        .register-left-image-content
         {
               display:none;
         }
