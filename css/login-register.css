@@ -38,13 +38,9 @@
     color:#373B44;
     font-size:0.9rem;
 }
-.line
+textarea::placeholder
 {
-    height:1px;
-    width:100px;
-    background:rgba(220, 36, 36, 1);
-    margin-left:auto;
-    margin-right:auto;
+   color:red;
 }
 .email-label,
 .pass-label,

@@ -51,7 +51,7 @@
         .login-right-image-content,
         .register-left-image-content
         {
-              display:none;
+              display:none !important;
         }
 
 
@@ -70,7 +70,7 @@
         .login-right-image-content,
         .register-left-image-content
         {
-              display:none;
+              display:none !important;
         }
 
        
@@ -104,7 +104,7 @@
         .login-right-image-content,
         .register-left-image-content
         {
-              display:none;
+              display:none !important;
         }
 
         

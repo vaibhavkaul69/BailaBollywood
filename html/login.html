@@ -73,7 +73,7 @@
             <a class="nav-link text-center text-white " href="../index.html#found-note">Founders's Note</a>
           </li>
           <li class="nav-item m-xl-2">
-            <a class="nav-link text-center text-white " href="contact-us.html">Contact Us</a>
+            <a class="nav-link text-center text-white " data-toggle="modal" data-target="#exampleModalCenter" >Contact Us</a>
           </li>
           
         </ul>
@@ -85,6 +85,7 @@
     </nav>
       
     <!---------------------------------Login Menu------------------------------------->
+
     <section class="login-section" id="loginMenu">
       <div class="container-fluid">
         
@@ -136,6 +137,39 @@
         
       </div>
     </section>
+
+    
+    <!---------------------------------------------------------- Modal Box----------------------------------------------- -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+          <form class="contact-us" id="contact-form" action="" method="POST">
+            <div class="form-group ">
+              <label for="txtname"  class="bg-white name-label"> <i style="color:#00F260 ;" class="fa fa-user ml-1 mr-2"></i>Name</label>
+              <input type="text"  required class="form-control" id="txtname" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <label for="message" class="bg-white name-label">Message</label>
+            <textarea style="height:200px;" class="form-control"   id="message" placeholder="Type Your Query Here"></textarea>
+          </div>
+          </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
    
     </body>

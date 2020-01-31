@@ -265,3 +265,41 @@ body
         transform:translateY(0px);
     }
 }
+
+.imgBox
+{
+    position:relative;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    height:275px;
+    width:307px;
+}
+.over-img
+{
+    background:rgba(220, 36, 36, 0.5);
+    position:absolute;
+    z-index:100;
+    height:100%;
+    width:305px;
+}
+.txt-over-img
+{
+    position:absolute;
+    color:#fff;
+    z-index:200;
+    bottom:5px;
+    left:5px;
+    font-family:monospace;
+    font-size:1rem;
+    text-align:center;
+    padding:20px;
+}
+.img{
+    transition:all 0.5s ease;
+}
+.imgBox:hover .img
+{
+   transform:scale(1.2);
+   
+}
