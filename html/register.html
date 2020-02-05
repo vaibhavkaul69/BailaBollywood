@@ -54,7 +54,7 @@
 
      <nav id="nav-header" class="navbar navbar-expand-lg navbar-light  sticky-top  ">
       <a class="navbar-brand" href="../index.html"><img src="../images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border rounded mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
@@ -75,12 +75,14 @@
           <li class="nav-item m-xl-2">
             <a class="nav-link text-center text-white " href="../index.html#found-note">Founders's Note</a>
           </li>
-          
+          <li class="nav-item m-xl-2">
+            <a class="nav-link text-center text-white " data-toggle="modal" data-target="#exampleModalCenter" >Contact Us</a>
+          </li>
           
         </ul>
         <form  class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
-          <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="login.html" target="_top"><i class="fas fa-sign-in-alt"></i> Login</a>
-          <a class="btn  ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="register.html" target="_top"><i class="fas fa-user-plus"></i> Register</a>
+          <a class="btn   mr-3 login-btn " href="login.html" target="_top"><i class="fas fa-sign-in-alt"></i> Login</a>
+          <a class="btn   ml-3 register-btn " href="register.html" target="_top"><i class="fas fa-user-plus"></i> Register</a>
         </form>
       </div>
     </nav>
@@ -151,6 +153,38 @@
           </div>
         </div>
       </section>
+
+      <!---------------------------------------------------------- Modal Box----------------------------------------------- -->
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        <form class="contact-us" id="contact-form" action="" method="POST">
+          <div class="form-group ">
+            <label for="txtname"  class="bg-white name-label"> <i style="color:#00F260 ;" class="fa fa-user ml-1 mr-2"></i>Name</label>
+            <input type="text"  required class="form-control" id="txtname" placeholder="Enter Your Name">
+          </div>
+          <div class="form-group">
+            <label for="message" class="bg-white email-label"> <i style="color:#667db6 ;" class="fa fa-comments  ml-1 mr-2"></i>Message</label>
+          <textarea style="height:200px;" class="form-control"   id="message" placeholder="Type Your Query Here"></textarea>
+        </div>
+        </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-light">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
       </body>
       <script src="../scripts/sticky-navbar.js"></script>
       <script src="../scripts/validate-register-form-and-download-data.js"></script>

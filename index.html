@@ -48,8 +48,8 @@
 
       <nav id="nav-header" class="navbar navbar-expand-lg navbar-light sticky-top  ">
         <a class="navbar-brand" href="index.html"><img src="images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler mr-3 rounded border" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="  navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
@@ -70,7 +70,7 @@
               <a class="nav-link text-center text-white " href="#found-note">Founders's Note</a>
             </li>
             <li class="nav-item m-xl-2">
-              <a class="nav-link text-center text-white " href="html/contact-us.html">Contact Us</a>
+              <a class="nav-link text-center text-white " data-toggle="modal" data-target="#exampleModalCenter" >Contact Us</a>
             </li>
             
           </ul>
@@ -91,7 +91,49 @@
           </div>
 
           
- <div data-spy="scroll" data-target="nav-header" data-offset="0">
+
+
+   <!---------------------------------------------------------- Modal Box----------------------------------------------- -->
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLongTitle">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        <form class="contact-us" id="contact-form" action="vaibhav.kaul2@gmail.com" enctype="text/plain" method="POST">
+          <div class="form-group ">
+            <label for="txtname"  class="bg-white name-label"> <i style="color:#00F260 ;" class="fa fa-user ml-1 mr-2"></i>Email</label>
+            <input type="email"  required class="form-control" id="txtname" name="mail" placeholder="Enter Your Name">
+          </div>
+          <div class="form-group ">
+            <label for="txtsubject"  class="bg-white subject-label"><i style="color:#ec2F4B;" class="fa fa-book mr-1"></i> Subject</label>
+            <input type="text" name="subject"  required class="form-control" id="txtsubject" placeholder="Enter the Subject">
+          </div>
+          <div class="form-group">
+            <label for="message" class="bg-white email-label"> <i style="color:#667db6 ;" class="fa fa-comments  ml-1 mr-2"></i>Message</label>
+          <textarea style="height:200px;" class="form-control"   id="message" placeholder="Type Your Query Here"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <input type="submit" class="btn btn-light" value="Save Changes" />
+        </div>
+        </form>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+     
+      
           <!------------------Image Gallery Section-two------------------------->
         <section class="baila-section section-one" >
           <div class="container section_one-background">
@@ -99,7 +141,7 @@
               <h2 class="display-3">Classical Indian Dance</h2>
               <div class="line mb-3"></div>
               <img src="images/dance-indian.jpg" class="traditional-dance-img mb-3">
-              <p class="indian_dance-history "><strong class="">India</strong> es famosa por sus formas de danza clásica que emergen de varios estados.
+              <p class="indian_dance-history "><strong >India</strong> es famosa por sus formas de danza clásica que emergen de varios estados.
                  Estas formas de baile se utilizan principalmente para expresar historias de textos mitológicos y religiosos indios.
                   Se otorga una gran importancia a los gestos con las manos,
                    las expresiones faciales y las posturas corporales a lo largo de la actuación. 
@@ -150,27 +192,26 @@
 
       <!------------------About Us Section-three-------------------------->
       
-      <section class="baila-section section-two" >
+      <section class="baila-section section-two mb-5" >
         <div class="container">
           <div class="jumbotron section_two-about-us text-center  ">
             <h2 class="about-heading display-2 section-heading  ">
-               About
+              Sobre 
                <br>
                Baila Bollywood
               </h2>
               <div class="line mt-3 mb-5 "></div>
            <img class="about-image d-inline float-left m-xl-3 m-lg-3 m-md-3 m-sm-3 m-2" alt="Logo Of Baila Bollywood" src="images/dummy-image.png">
-            <p class="about_us-paragraph text-justify">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-              Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-              cuando un impresor
-               (N. del T. persona que se dedica a la imprenta)
-                desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                 No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, 
-                 quedando esencialmente igual al original.
-                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.....
-                  
-  
+            <p class="about_us-paragraph text-justify">BailaBollywood trabaja sobre la misión de ofrecer
+               al mundo hispanohablante una experiencia de primera mano a la música india,
+               la danza en general y el mundo de Bollywood en particular. 
+               Ofrecemos la información sobre la música y las danzas indias en 
+               español a los entusiastas latinoamericanos y españoles.
+               Queremos exponer la cultura india al mundo hispanohablante y ampliar los horizontes a
+                través de diversas formas de expresión y arte. 
+                Nuestro objetivo es construir puentes duraderos entre la India y los países de la habla hispana a través de la música,
+                 el cine, u otras formas de las artes.
+              
             </p>
               
         </div>
@@ -183,7 +224,7 @@
 
        <!---------------------Alphabet Search Section-Three-------------------------->
         
- <section class="baila-section section-three" >
+ <section class="baila-section section-three mt-2" >
     <div class="container">
         <h2 class="srch-alphabet display-2 text-center ">Buscar Por Alfabeto</h2>
         <p class="text-center"> Search Your Favourite Songs By <strong>Alphabet</strong></p>
@@ -306,16 +347,36 @@
           <h3 class="font-weight-light text-center display-2 text-white">Our Founder</h3>
           <h4 class="font-weight-light text-center display-4 font-weight-bold text-white">Subhas Yadav</h4>
           <div class="line mt-2 mb-2  bg-white"></div>
-          <img src="images/founder.png" class="img-founder mt-2 mb-2 justify-content-center " alt="Image of founder">
-          <p class="text-center text-white font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-               It has survived not only five centuries, but also the leap into electronic typesetting, 
-               remaining essentially unchanged. 
-               It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.....
-   
-              </p>
+          <div class="container-founder-image mt-5 mb-5 justify-content-center">
+          <img src="images/founder.png" class="img-founder  " alt="Image of founder">
+        </div>
+        
+            <li class="text-white mb-4 d-inline list-item    text-justify container">
+              <strong class="font-weight-bold ">Subhas Yadav</strong>, un estudioso de la lengua,
+               literatura y culturas del mundo hispanohablante, 
+               está en una misión de por vida hacia la difusión
+                cultural entre la India y el vasto mundo 
+                cultural de América Latina y España. </li>
+              <li class="text-white d-inline mb-4 list-item  text-justify container">
+                  Hace década, durante sus años de ERASMUS en la Universidad de Santiago de Compostela, 
+                  él se dio cuenta de que muchos de sus amigos latinoamericanos
+                   y españoles tenían curiosidad para escuchar la música
+                    india o ver las películas con subtítulos en español.
+                     Pero no había nada. En otro lado, el español se ha 
+                     surgido como un idioma muy demandado a lo largo del tiempo.
+                      Así se ideó <strong>SpanishBOLO</strong> y <strong>BailaBollywood</strong> para crear un puente 
+                      entre la cultura india y los países de la habla hispana.
+                    </li>
+                    <li class="text-white d-inline mb-5 list-item   text-justify container">
+                      Los dos proyectos <strong>SpanishBOLO</strong>,
+                       y <strong>BailaBollywood</strong>  pretenden explorar los rincones culturales
+                        y compartir estas riquezas con el compromiso de 
+                        acercar a estos dos mundos relativamente distantes.  
+                      </li>
+                    
+        
+          
+            
               <div class="social-icons">
               <a href="https://www.linkedin.com/in/subhasy/" target="_blank"><i class="fa fa-linkedin"></i></a>
               <a href="https://twitter.com/subhas_yadav" target="_blank"><i class="fa fa-twitter"></i></a>

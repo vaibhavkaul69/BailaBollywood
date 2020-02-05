@@ -38,10 +38,7 @@
     color:#373B44;
     font-size:0.9rem;
 }
-textarea::placeholder
-{
-   color:red;
-}
+
 .email-label,
 .pass-label,
 .phone-label,
@@ -59,7 +56,11 @@ textarea::placeholder
     height:60px;
     border:1px solid #373B44;
 }
-
+.form-control[placeholder]
+{
+    margin-top:10px;
+   
+}
 .form-control:focus
 {
     border-color:rgba(220, 36, 36, 1);

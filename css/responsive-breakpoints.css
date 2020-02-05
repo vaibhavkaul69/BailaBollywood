@@ -4,7 +4,10 @@
 @media  (min-width: 1200px)
  {
 
-
+       .list-item
+        {
+              width:75%;
+        }
 }
 
  /*****For screen that are greater than 991px and less than 1200px 
@@ -36,6 +39,16 @@
          {
                  font-size:0.8rem;
          }
+          .list-item
+        {
+              width:90%;
+        }
+         .modal,
+         .modal-dialog,
+        .modal-dialog-centered
+        {
+             width:100vw;
+        }
  }
 
 /*For screen that are greater than 767px and less than 991px 
@@ -52,6 +65,16 @@
         .register-left-image-content
         {
               display:none !important;
+        }
+        .list-item
+        {
+              width:90%;
+        }
+         .modal,
+         .modal-dialog,
+        .modal-dialog-centered
+        {
+             width:100vw;
         }
 
 
@@ -107,7 +130,17 @@
               display:none !important;
         }
 
-        
+        .list-item
+        {
+              width:100%;
+        }
+
+        .modal-dialog,
+        .modal-dialog-centered
+        {
+             margin:0px;
+             width:100vw;
+        }
         
    }
 

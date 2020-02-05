@@ -42,7 +42,36 @@ body
 {
     font-size:3rem;
 }
+.name-label,
+.email-label,
+.subject-label
+{
+    position:relative;
+    top:30px;
+    left:20px;
+    color:rgba(220, 36, 36, 1);
+    font-size:1.5rem;
+}
+.form-control[placeholder]
+{
+    margin-top:10px;
+   
+}
+.form-control
+{
+    height:60px;
+    border:1px solid #373B44;
+}
 
+.back-to-top-btn
+{
+    height:50px;
+    width:50px;
+    position:fixed;
+    right:0px;
+    top:500px;
+    background:#000;
+}
 .section-one,
 .section-two,
 .section-three,
@@ -87,8 +116,13 @@ body
     font-size:1.2rem;
     font-weight:bolder;
     text-transform: capitalize;
-   
 }
+.about_us-paragraph
+{
+    letter-spacing:1px;
+    word-spacing:2px;
+}
+
 .indian_dance-history strong
 {
     font-size:1.5rem;
@@ -157,14 +191,26 @@ body
     color:white;
 }
 
-
+.container-founder-image
+{
+    position:relative;
+    overflow:hidden;
+    height:200px;
+    width:200px;
+   border-radius:50%;
+}
 .img-founder
 {
     height:200px;
     width:200px;
     border-radius:50%;
-    
 }
+
+.container-founder-image:hover .img-founder
+{
+   transform:scale(1.1);
+}
+
 .content-center
 {
     margin-bottom:0;
