@@ -5,6 +5,10 @@
     box-sizing:border-box;
     font-family: 'Titillium Web', sans-serif ;
 }
+body
+{
+    background:url("../images/section-background.jpg");
+}
 .container-row
 {
     width:100%;
@@ -12,6 +16,7 @@
     margin:5rem auto;
     box-shadow:0 0px 8px 0 rgb(0, 29, 56);
     border-radius:20px;
+    background:#fff;
 }
 .form-text
 {
@@ -19,6 +24,7 @@
     color:#373B44;
     font-size:0.9rem;
 }
+
 .modal-header
 {
     box-shadow:0px 0px 25px 0px;
