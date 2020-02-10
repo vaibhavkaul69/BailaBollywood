@@ -43,8 +43,8 @@
 .login-right-image-content
 {
 
-    height:500px;
-    margin:auto;
+    min-height:100%;
+    margin:0;
     border-radius:0px 20px 20px 0px;
     background:white;
     background-image: url('../images/spanish-man.gif');
@@ -54,10 +54,12 @@
 .register-left-image-content
 {
   
-    height:740px;
-     margin:auto;
+    min-height:100%;
+    margin:0;
+    background:#fff;
     border-radius:20px 0px 0px 20px;
-     background-image: url('../images/section-background.jpg');
+     background-image: url('../images/spanish-man.gif');
+     background-size:100% 100%;
 }
 
 .form-control
@@ -74,41 +76,6 @@
 {
     border-color:rgba(220, 36, 36, 1);
 }
-.mysteryBtn
-{
-    border:none;
-    padding:10px;
-    color:rgba(220, 36, 36, 1);
-    background:transparent;
-    background:linear-gradient(to right,rgba(0, 29, 56, 1) 50%,#fff 50%);
-    border:1px solid #0009;
-    filter:drop-shadow(2px 2px 2px rgba(2, 27, 121, 0.5));
-    box-sizing:border-box;
-    cursor:pointer;
-    font-weight:900;
-    animation:scale-up 0.8s infinite alternate;
-
-}
-
-
-@keyframes scale-up
-{
-    0%
-    {
-        transform:scale(1);
-     
-  
-        
-    }
-    100%
-    {
-        transform:scale(1.1);
-          
-  
-      
-    }
-}
-
 
 .btn-register
 {
@@ -149,4 +116,66 @@
     height:100px;
     width:100px;
 }
+.or-seperator
+{
+    position:relative;
+    top:55px;
+    background:#fff;
+    width:80px;
+    height:80px;
+    line-height:80px;
+    border-radius:50%;
+    border:1px solid rgba(0,29,56,1);
+    margin:0 auto;
+}
+.social-media-login-seperator
+{
+   border:1px solid rgba(0, 29, 56, 1);
+}
+.facebook-login
+{
+    color:#fff;
+    background:#3b5999;
+    border:1px solid #3b5999;
+    text-align:center;
+    transition:0.5s all;
+    border-radius:50px;
+}
 
+.google-login
+{
+    color:#fff;
+     transition:0.5s all;
+    background:#dd4b39;
+    border:1px solid #dd4b39;
+    text-align:center;
+    border-radius:50px;
+}
+
+.instagram-login
+{
+     transition:0.5s all;
+    color:#fff;
+    background:linear-gradient(to right,#405DE6,#833AB4,#C13584, #E1306C,#F77737,#FCAF45,#FFDC80);
+    border:1px solid #fff;
+    text-align:center;
+    border-radius:50px;
+}
+.facebook-login:hover
+{
+    color:#3b5999;
+    background:#fff;
+    border-color:#3b5999;
+}
+.google-login:hover
+{
+    color:#dd4b39;
+    background:#fff;
+    border-color:#dd4b39;
+}
+.instagram-login:hover
+{
+    color:#e4405f;
+    background:#fff;
+    border:1px solid #e4405f;
+}

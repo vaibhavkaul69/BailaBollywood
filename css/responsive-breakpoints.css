@@ -49,6 +49,7 @@
         {
              width:100vw;
         }
+
  }
 
 /*For screen that are greater than 767px and less than 991px 
@@ -76,6 +77,11 @@
         {
              width:100vw;
         }
+        .container-row
+        {
+                box-shadow:none;
+                margin-top:0;
+        }
 
 
   }
@@ -95,7 +101,11 @@
         {
               display:none !important;
         }
-
+         .container-row
+        {
+                box-shadow:none;
+                margin-top:0;
+        }
        
 
 
@@ -141,6 +151,12 @@
              margin:0px;
              width:100vw;
         }
+         .container-row
+        {
+                box-shadow:none;
+                margin-top:0;
+        }
+       
         
    }
 
@@ -168,6 +184,12 @@
        {
        
               font-size:4rem;
+        }
+        .facebook-login,
+        .google-login,
+        .instagram-login
+        {
+                font-size:1.3rem;
         }
     
 }
