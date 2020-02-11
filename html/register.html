@@ -84,7 +84,7 @@
 
      <!-----------------------------Register-Menu--------------------------------------->
      <section class="register-section" id="registerMenu">
-        <div class="container-fluid p-0">
+        <div class="container p-0">
           
           <div class="row container-row  ">
             
@@ -95,28 +95,28 @@
 
             <div class="col-xl-5 col-lg-5 form-column ">
 
-              <form class="mt-4" >
+              <form class="mt-4" method="POST" enctype="text/plain" >
               <div class="display-4   text-center"><i style="color:#ec2F4B;" class="fa fa-user-plus mr-3"></i> Sign Up</div>
               <div class="w-100 ">
   
                 <div class="form-group ">
                   <label for="txtname"  class="bg-white name-label"> <i style="color:#00F260 ;" class="fa fa-user ml-1 mr-2"></i>Name</label>
-                  <input type="text"  required class="form-control" name="username" id="txtname" placeholder="Enter Your Name">
+                  <input type="text" id="txtname" required="required" class="form-control" name="username"  placeholder="Enter Your Name">
                 </div>
   
                 <div class="form-group ">
                   <label for="txtmail"  class="bg-white email-label"><i style="color:#f7b733 ;" class="fa fa-envelope ml-1 mr-2"></i> Email</label>
-                  <input type="email"  required class="form-control" name="mail" id="txtmail" placeholder="Enter Your Email">
+                  <input type="email" id="txtmail" required="required" class="form-control" name="mail"  placeholder="Enter Your Email">
                 </div>
   
                 <div class="form-group ">
                   <label for="txtnum"  class="bg-white phone-label"><i style="color:#ec38bc ;" class="fa fa-phone-square ml-1 mr-2"></i>Phone Number</label>
-                  <input type="number" name="phone-number" onKeyPress="if(this.value.length==10) return false;" class="form-control" id="txtnum" placeholder="Enter Your Phone Number">
+                  <input type="number" required="required" id="txtnum" name="phone-number" onKeyPress="if(this.value.length==10) return false;" class="form-control"  placeholder="Enter Your Phone Number">
                 </div>
   
                 <div class="form-group">
                   <label for="txtpass"  class="bg-white pass-label"><i style="color:#667db6 ;" class="fa fa-key ml-1 mr-2"></i>Password</label>
-                  <input type="password" required  name="password" class="form-control" id="txtpass" placeholder="Enter Your Password">
+                  <input type="password" id="txtpass" required="required" autocomplete="on"  name="password" class="form-control"  placeholder="Enter Your Password">
                   <small id="passwordHelpBlock" class="form-text text-muted text-left">
                     <b>*&nbsp;</b>The Password Should be atleast <b>8 Characters</b> Long. 
                     </small>
@@ -127,7 +127,7 @@
             <div class="row">
               <div class="col">
             <!------------Take the user back to the Login screen when succesfully registered------->
-            <a href="#" target="_top"><input type="submit" class="btn-register btn  " onclick="saveFile()" value="Register"></a>
+            <a href="#" target="_top"><input type="submit" class="btn-register btn " onclick="saveFile()"value="Register"></a>
           </div>
             <!--<small id="emailHelp" class="form-text mt-3 mb-3 font-italic  text-left"><strong>Already a User<i style="color:#ec2F4B;" class="fas fa-laugh-beam ml-1"></i></strong></small>
             --> <div class="col">
@@ -195,23 +195,17 @@
       </div>
     </div>
   </div>
+
+   <!--------------------------------------local Javascrpt files--------------------------------------------------------->
+   <script src="../scripts/sticky-navbar.js"></script>
+   <script src="../scripts/validate-register-form-and-download-data.js"></script>
+   
+   <!-------------------------bootstrap javascript----------------------------->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       </body>
-      <script src="../scripts/sticky-navbar.js"></script>
-      <script src="../scripts/validate-register-form-and-download-data.js"></script>
-   
-        <script>
-    function mysteryNumber() 
-    {
-        var x= document.getElementById("txtMystery");
-        x.setAttribute("value", Math.floor(Math.random()*10000 ));
-        document.getElementById('btnMystery').style.display="none";
-        
-    }
-
-   
-</script>
-      <!-------------------------bootstrap javascript----------------------------->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="../scripts/bootstrap.min.js"></script>
-
+      
+       
+     
       </html>

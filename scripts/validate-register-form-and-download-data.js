@@ -7,16 +7,16 @@ function saveFile()
             var mail = document.getElementById('txtmail');
            var number = document.getElementById('txtnum');
             var password = document.getElementById('txtpass');
-            var mysteryNumber=document.getElementById('txtMystery');
+            
 
           var nameSize=name.value.length;
           var mailSize=mail.value.length;
           var numberSize=number.value.length;
           var passwordSize=password.value.length;
-          var mysteryBoxSize=mysteryNumber.value.length;
+          
             
             
-              if(nameSize>0 && mailSize>0 && numberSize>0 && passwordSize>=8 && mysteryBoxSize>0)
+              if(nameSize>0 && mailSize>0 && numberSize>0 && passwordSize>=8 )
               {
                   // This variable stores all the data.
             let data = 'The Registeration Details of '+ name.value.toUpperCase() + ' are :' + '\r\n '+
@@ -43,12 +43,13 @@ function saveFile()
             }
     
             newLink.click(); 
-            return true;
+
+            console.log("If executed");
             
           }
           else
           {
-             
+             console.log("If never executed");
               saveFile();
           }
         }
