@@ -146,12 +146,16 @@
 {
          .hero-image
         {
-                padding-top:10rem;
+                padding-top:5rem;
         }
         .hero-image h1,h2
          {
               font-size:4.9rem;
-              font-weight:900;   
+           
+         }
+         .hero-image strong p
+         {
+                  font-weight:900;
          }
        .log-reg-btn
         {
@@ -179,16 +183,17 @@
  {
         .hero-image
         {
-                padding-top:10rem;
+                padding-top:8rem;
         }
          .hero-image h1,h2
          {
               font-size:4.5rem;
-              font-weight:900;   
+                 
          }
          .hero-image p
          {
                  font-size:3rem;
+                 font-weight:900;
          }
                .log-reg-btn
         {
@@ -247,12 +252,16 @@
 {
         .hero-image
         {
-                padding-top:10rem;
+                padding-top:5rem;
         }
         .hero-image h1,h2
          {
               font-size:4.5rem;
-              font-weight:900;   
+                 
+         }
+         .hero-image strong p
+         {
+                 font-weight:900;
          }
       .about-heading,
       .srch-alphabet,
@@ -267,12 +276,12 @@
 {
         .hero-image
         {
-                padding-top:10rem;
+                padding-top:5rem;
         }
          .hero-image h1,h2
          {
               font-size:3.8rem;
-              font-weight:900;   
+             
          }
    .log-reg-btn
         {
