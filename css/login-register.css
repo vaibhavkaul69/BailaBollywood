@@ -74,7 +74,18 @@ body
      background-image: url('../images/spanish-man.gif');
      background-size:100% 100%;
 }
-
+.btn-close
+{
+    background:#b92b27;
+    color:#fff;
+    font-weight:900;
+}
+.btn-save
+{
+    background:#3b5999;
+    color:#fff;
+    font-weight:900;
+}
 .form-control
 {
     height:60px;

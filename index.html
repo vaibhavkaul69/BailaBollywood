@@ -33,9 +33,9 @@
       <!------------------------------------Navigation Bar Section-One------------------------------------------>
 
       <nav id="nav-header" class="navbar navbar-expand-lg navbar-light sticky-top  ">
-        <a class="navbar-brand" href="index.html"><img src="images/dummy-image.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
-        <button class="navbar-toggler mr-3 rounded border" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="  navbar-toggler-icon"></span>
+        <a class="navbar-brand p-0 m-0" href="index.html"><img src="images/Spanish-bolo-natraj-transparent.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
+        <button class="navbar-toggler mr-3  border" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=" navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
@@ -105,8 +105,8 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <input type="submit" class="btn btn-light" value="Save Changes" />
+          <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          <input type="submit" class="btn btn-save" value="Save Changes" />
         </div>
         </form>
 
@@ -123,25 +123,90 @@
         <section class="baila-section section-one" >
           <div class="container section_one-background">
             <div class="jumbotron indian-classical-jumbotron text-center p-0">
-              <h2 class="display-3">Classical Indian Dance</h2>
+              <h2 class="display-3">Classical Indian Dance and Music</h2>
               <div class="line mb-3"></div>
               <img src="images/dance-indian.jpg" class="traditional-dance-img mb-3">
-              <p class="indian_dance-history "><strong >India</strong> es famosa por sus formas de danza clásica que emergen de varios estados.
-                 Estas formas de baile se utilizan principalmente para expresar historias de textos mitológicos y religiosos indios.
-                  Se otorga una gran importancia a los gestos con las manos,
-                   las expresiones faciales y las posturas corporales a lo largo de la actuación. 
-                   Las actuaciones clásicas indias comprenden tres aspectos principales que son el ritmo,
-                    la expresión y el juego grupal. 
-                    Todos los bailarines están vestidos con vibrantes tonos de ropa que son diferentes para cada estilo.
-                     Por ejemplo,
-                      los bailarines de<strong > Bharatnatyam</strong> usan una sari donde los bailarines de<strong class="ml-2">Kathak</strong>  usan<strong class="ml-2">Anarkali</strong> .
-                       Las formas de danza clásica india han visto un gran cambio después del colonialismo, 
-                       sin embargo,
-                        se pueden hacer muchos rastros de la presencia histórica del gobierno de Mughal y el gobierno de Rajput.
-
-              </p>
+              <div class="indian_dance-history text-justify indian-dance-music-spanish">
+              <p>
+               <strong> India</strong> es famosa por sus formas de danzas clásicas que se 
+                encuentran por varias provincias del pais. Estas formas 
+                del baile se utilizan principalmente para expresar historias 
+                de los textos mitológicos y religiosos. <br/><br/>Se otorga una gran 
+                importancia a los gestos que se hacen con las manos, las
+                 expresiones faciales y las posturas corporales a lo largo de
+                  la actuación. Las actuaciones clásicas indias comprenden de
+                   tres aspectos principales que son el ritmo, la expresión y
+                    la postura del cuerpo. Todos los bailarines se visten de 
+                    vibrantes tonos de ropa que son diferentes para cada estilo.<br/><br/> 
+                    Por ejemplo, los bailarines de <strong>Bharatnatyam</strong> usan una sari donde, 
+                    mientras que los bailarines de<strong> Kathak</strong> usan anarkali. 
+                    Las formas de danzas clásicas indias han pasado por 
+                    un gran cambio después del contacto occidental, 
+                    sin embargo, se pueden hacer muchos rastros de
+                     la presencia histórica de la etapa<strong> mogol</strong> y de los reinos de los <strong>Rajputs</strong>.                
+                      </p>
+                      <br/>
+                     <ul class="dance-form-list indian_dance-history">
+                       <span>Algunas de las formas del baile son siguientes desde la provincias o zonas indicadas:</span>
+                       <li>Bharatanatyam, de Tamil Nadu</li>
+                       <li>Kathak, de Uttar Pradesh</li>
+                       <li>Kathakali, de Kerala </li>
+                       <li>Kuchipudi, de Andhra Pradesh </li>
+                       <li>Odissi, de Odisha</li>
+                       </ul>
+                       <br/>
+                       <p>
+                      <strong>Música india</strong> : la música de la India incluye múltiples variedades de músicas e.g. rap punjabi, 
+                     música clásica del norte y sur de la India, música folklórica, música de Bollywood, 
+                     rock y pop indio. La mayoría de los cuales deriva del rock and roll occidental. 
+                     Sin embargo, las canciones más famosas provienen de las películas de Bollywood,
+                      que a menudo se reproducen en bodas, cumpleaños y celebraciones de fiestas. 
+                      La música clásica india se compone de dos características llamadas "Raga",
+                       que se enciende las emociones y "Tala", que mide el ciclo de tiempo en las melodías.
+                       <br/><br/>
+                       A los indios les encanta compartir algunos movimientos y bailar al ritmo de música diversa. 
+                       Ha sido una parte integral de la vida india.
+                        Desde canciones de oración hasta música de fiesta, 
+                        los indios siempre están absortos en las melodías.
+                      </p>
+                      
+                     <button onclick="DanceMusicToEnglish()" class="dance-music-to-english d-inline btn btn-save float-right mt-3">Convert to English</button>
+                    </div>
+                     
+                      
+                <div class="indian_dance-history text-justify indian-dance-music-english ">
+                  <p>
+                  <strong>India</strong> is famous for its Classical dance forms that emerge from various states.
+                   These dance forms are majorly used to express stories from Indian mythological and religious texts.
+                    A great amount of significance is given to the hand gestures, facial expressions and body postures throughout the performance.
+                     Indian Classical performances comprise of three main aspects which are rhythm, expression and group play.
+                     <br/><br/>
+                      All the dancers are dressed in vibrant shades of clothing which is different for each style. 
+                      For example, <strong>Bharatnatyam</strong> dancers wear a saree where as<strong> Kathak</strong> dancers wear Anarkali. 
+                      Indian Classical dance forms have seen a great change post colonialism yet many traces can be made to the historical presence of <strong>Mughal</strong> rule and <strong>Rajput</strong> rule. 
+                      </p>
+                      <br/>
+                      <ul class="dance-form-list indian_dance-history">
+                        <span>Some famous Dance forms in India are :</span>
+                        <li>Bharatanatyam, from Tamil Nadu
+                        </li>
+                        <li>Kathak, from Uttar Pradesh</li>
+                        <li>Kathakali, from Kerala </li>
+                        <li>Kuchipudi, from Andhra Pradesh </li>
+                        <li>Odissi, from Odisha</li>
+                        </ul>
+                        <br/>
+                        <p>
+                         <strong> Indian Music</strong>: The music of India includes multiple varieties of Punjabi Rap Music, Classical music from North and South India, Folk music, Bollywood, Indian rock and pop, most of which is derivative from western rock and roll. The most famous songs come from the Bollywood movies which are often played at weddings, birthdays and party celebrations. Indian Classical music comprises of two features called “Raga”, which is known to ignite emotions and “Tala” which is a measures the time cycle in tunes. 
+                            <br/><br/>
+                            Indians love to share some moves and dance to the tunes of diverse music. It has been an integral part of Indian lives. From prayer songs to party music, Indians are always engrossed in the melodies.
+                      </p>
+                      <button onclick="DanceMusicToSpanish()" class="dance-music-to-spanish d-inline btn btn-close float-right mt-3">Convert to Spanish</button>
+                    </div>
             </div>
-            <div class="row mt-5 row-image ">
+          </div>
+
+            <div class="row mt-5 row-image  ">
               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6   mb-3">
                 
              <a href="images/painting-1.jpg" target="_blank">
@@ -186,17 +251,23 @@
                Baila Bollywood
               </h2>
               <div class="line mt-3 mb-5 "></div>
-           <img class="about-image d-inline float-left m-xl-3 m-lg-3 m-md-3 m-sm-3 m-2" alt="Logo Of Baila Bollywood" src="images/dummy-image.png">
-            <p class="about_us-paragraph text-justify">BailaBollywood trabaja sobre la misión de ofrecer
-               al mundo hispanohablante una experiencia de primera mano a la música india,
-               la danza en general y el mundo de Bollywood en particular. 
-               Ofrecemos la información sobre la música y las danzas indias en 
-               español a los entusiastas latinoamericanos y españoles.
-               Queremos exponer la cultura india al mundo hispanohablante y ampliar los horizontes a
-                través de diversas formas de expresión y arte. 
-                Nuestro objetivo es construir puentes duraderos entre la India y los países de la habla hispana a través de la música,
-                 el cine, u otras formas de las artes.
+           <img class="about-image d-inline float-left" alt="Logo Of Baila Bollywood" src="images/Spanish-bolo-natraj-transparent.png">
+            <p class="about_us-paragraph spanish_translation text-justify">
+              BailaBollywood trabaja sobre la misión de ofrecer al mundo hispanohablante una experiencia de primera mano a la música india, la danza en general y el mundo de Bollywood en particular. Ofrecemos la información sobre la música y las danzas indias en español a los entusiastas latinoamericanos y españoles.
+              <br/><br/>
+              Queremos exponer la cultura india al mundo hispanohablante y ampliar los horizontes a través de diversas formas de expresión y arte. Nuestro objetivo es construir puentes duraderos entre la India y los países de la habla hispana a través de la música, el cine, u otras formas de las artes.
+
+                <button onclick="spanToeng()" class="spanish-to-english d-inline btn btn-save float-right mt-4">Convert to English</button>
               
+            </p>
+            
+            <p class="about_us-paragraph english_translation text-justify">
+              BailaBollywood intends to offer the Spanish speaking world first-hand exposure to Indian Music, Dance in general and Bollywood in particular. Our aim is to provide curated information in Spanish on Bollywood to the Latin American and Spanish enthusiasts of Indian Music and Dance.
+              <br/><br/>
+              Art has always been fluid and lives through centuries for the world to cherish. Moreover, the Pop and contemporary culture of every country represents the rich heritage, customs and traditions that can be showcased to the world.  We wish to expose Indian Culture to the Spanish-speaking world and broaden the horizons through various forms of expression and art. Our goal is to construct durable bridges between India and the Spanish speaking countries through music, movies and entertainment which will be curated in Spanish.   
+              
+              <button onclick="engTospan()" class="english-to-spanish d-inline btn btn-close float-right mt-4">Convert to Spanish</button>
+
             </p>
               
         </div>
@@ -314,7 +385,7 @@
         </div>
 
         <div class="row mt-5 justify-content-center ">
-        <a class="  load-more btn font-weight-bold text-white" href="#" target="_blank" title="Load More Videos">&#9733;&nbsp;&nbsp;&nbsp;Load More.&nbsp;&nbsp;&nbsp;&#9733;</a>
+        <a class="  load-more btn font-weight-bold text-white" href="html/login.html" target="_self" title="Load More Videos">&#9733;&nbsp;&nbsp;&nbsp;Load More.&nbsp;&nbsp;&nbsp;&#9733;</a>
           </div>
         </div>
       </div>
@@ -335,36 +406,30 @@
           <div class="container-founder-image mt-5 mb-5 justify-content-center">
           <img src="images/founder.png" class="img-founder  " alt="Image of founder">
         </div>
-        
-            <li class="text-white mb-4 d-inline list-item    text-justify container">
-              <strong class="font-weight-bold ">Subhas Yadav</strong>, un estudioso de la lengua,
-               literatura y culturas del mundo hispanohablante, 
-               está en una misión de por vida hacia la difusión
-                cultural entre la India y el vasto mundo 
-                cultural de América Latina y España. </li>
-              <li class="text-white d-inline mb-4 list-item  text-justify container">
-                  Hace década, durante sus años de ERASMUS en la Universidad de Santiago de Compostela, 
-                  él se dio cuenta de que muchos de sus amigos latinoamericanos
-                   y españoles tenían curiosidad para escuchar la música
-                    india o ver las películas con subtítulos en español.
-                     Pero no había nada. En otro lado, el español se ha 
-                     surgido como un idioma muy demandado a lo largo del tiempo.
-                      Así se ideó <strong>SpanishBOLO</strong> y <strong>BailaBollywood</strong> para crear un puente 
-                      entre la cultura india y los países de la habla hispana.
-                    </li>
-                    <li class="text-white d-inline mb-5 list-item   text-justify container">
-                      Los dos proyectos <strong>SpanishBOLO</strong>,
-                       y <strong>BailaBollywood</strong>  pretenden explorar los rincones culturales
-                        y compartir estas riquezas con el compromiso de 
-                        acercar a estos dos mundos relativamente distantes.  
-                      </li>
-                    
+        <div class=" text-white spanish_translation-founder text-white  text-justify container">
+           
+                <strong>Subhas Yadav</strong>, un estudioso de la lengua, literatura y culturas del mundo hispanohablante, está en una misión de por vida hacia la difusión cultural entre la India y el vasto mundo cultural de América Latina y España. 
+                  <br/><br/>
+                Hace década, durante sus años de ERASMUS en la Universidad de Santiago de Compostela, él se dio cuenta de que muchos de sus amigos latinoamericanos y españoles tenían curiosidad para escuchar la música india o ver las películas con subtítulos en español. Pero no había nada. En otro lado, el español se ha surgido como un idioma muy demandado a lo largo del tiempo. Así se ideó SpanishBOLO y BailaBollywood para crear un puente entre la cultura india y los países de la habla hispana.
+                  <br/><br/>
+                 Los dos proyectos <strong>SpanishBOLO, y BailaBollywood</strong> pretenden explorar los rincones culturales y compartir estas riquezas con el compromiso de acercar a estos dos mundos relativamente distantes.  
+                <button onclick="spanToengFounder()" class="spanish-to-english d-inline btn btn-save float-right mt-4">Convert to English</button>
+        </div>
+
+                  <div class="english_translation-founder text-white  mb-5 list-item   text-justify container">
+                        <strong>Subhas Yadav</strong> is on a lifelong mission towards the diffusion of the Spanish language, literature and culture in India, and in return the Indian culture in the vast geography of the Spanish speaking world; Latin America and Spain. Mr Subhas has an Integrated MA in Spanish from JNU, Masters from Santiago de Compostela University, PhD ERASMUS MUNDUS Scholar at University of Extremadura, Spain and currently concluding my PhD on a comparative study of Gabriel García Márquez and his Indian counterparts.
+                      <br/><br/>
+                        During his ERASMUS years at Santiago de Compostela University, Mr Subhas found that many Latin American and Spanish friends were curious to listen to the Indian music with Spanish subtitles and lyrical translation or watch Indian movies with Spanish subtitles. So Mr Subhas came up with <strong>SpanishBOLO</strong> and<strong> Baila Bollywood</strong> to create a bridge between Indian culture and Spanish speaking countries. 
+                        <br/><br/>
+                        Other projects that the founder has designed is  SpanishBOLO, a project to take Spanish to everyone present in the online digital world. The founder’s motto is to open all boundaries and share cultural richness with the world! He vouches to bring the world closer through the intriguing exchange of language, art and expression. 
+                        <button onclick="engTospanFounder()" class="english-to-spanish d-inline btn btn-close float-right mt-4">Convert to Spanish</button>
+                  </div>
         
           
             
               <div class="social-icons">
-              <a href="https://www.linkedin.com/in/subhasy/" target="_blank"><i class="fa fa-linkedin"></i></a>
-              <a href="https://twitter.com/subhas_yadav" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/subhasy/" class="fa fa-linkedin" target="_blank"></a>
+              <a href="https://twitter.com/subhas_yadav"  class="fa fa-twitter" target="_blank"></a>
                 </div>
             </div>
       </div>
@@ -392,7 +457,7 @@
               <a href=" https://link.medium.com/jSOvCnafY3" class="col-4 fa fa-medium  text-center" target="_blank"></a>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 footer-right">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-right">
             <img src="images/logo_white.png" class="footer-right-img ">
           </div>
         </div>
@@ -401,13 +466,13 @@
   </div>
     <!--------------------------------------local Javascrpt files--------------------------------------------------------->
     <script src="scripts/sticky-navbar.js"></script>
+    <script src="scripts/spanish-to-english-translate.js"></script>
    <!-------------------------bootstrap javascript----------------------------->
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
     
-     
    
    
 </html>

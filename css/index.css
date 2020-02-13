@@ -71,16 +71,6 @@ body
     height:60px;
     border:1px solid #373B44;
 }
-
-.back-to-top-btn
-{
-    height:50px;
-    width:50px;
-    position:fixed;
-    right:0px;
-    top:500px;
-    background:#000;
-}
 .section-one,
 .section-two,
 .section-three,
@@ -124,7 +114,7 @@ body
 {
     font-size:1.2rem;
     font-weight:bolder;
-    text-transform: capitalize;
+    text-align: justify;
 }
 .about_us-paragraph
 {
@@ -134,11 +124,7 @@ body
 
 .indian_dance-history strong
 {
-    font-size:1.5rem;
-    font-size:bolder;
-    font-family:baskerville old face;
-    letter-spacing: 5px;
-    text-decoration:underline;
+    font-size: 1.8rem;
 }
 .traditional-dance-img
 {
@@ -147,10 +133,11 @@ body
 }
 .about-image
 {
-    width:220px;
-    height:200px;
-    shape-outside: circle(50%);
-    border-radius:50%;
+    width:300px;
+    height:250px;
+    shape-outside:circle(50%);
+    margin:0 20px 20px 0;
+   
 }
 
 .section_two-about-us
@@ -299,7 +286,28 @@ body
 {
     background:#e4405f;
     border-color:#e4405f;
-
+}
+.fa-quora:hover
+{
+    background:#b92b27;
+    border-color:#b92b27;
+}
+.fa-medium:hover
+{
+    background:#02b875;
+    border-color:#02b875;
+}
+.btn-close
+{
+    background:#b92b27;
+    color:#fff;
+    font-weight:900;
+}
+.btn-save
+{
+    background:#3b5999;
+    color:#fff;
+    font-weight:900;
 }
 .footer-right-img
 {
@@ -359,3 +367,5 @@ body
    transform:scale(1.2);
    
 }
+
+

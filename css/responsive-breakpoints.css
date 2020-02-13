@@ -8,6 +8,12 @@
         {
               width:75%;
         }
+        .footer-left,
+        .footer-center
+        {
+                border-right:1px solid white;
+                height:360px;
+        }
 }
 
  /*****For screen that are greater than 991px and less than 1200px 
@@ -20,6 +26,11 @@
         {
                 margin-left:10px;
                
+        }
+        .footer-left,
+        .footer-center
+        {
+                border-right:1px solid white;
         }
 
  }
@@ -48,6 +59,17 @@
         .modal-dialog-centered
         {
              width:100vw;
+        }
+        .footer-left
+        {
+                border-right:1px solid white;
+                height:360px;
+        }
+        .footer-left,
+        .footer-center
+        {
+                border-bottom:1px solid white;
+                 height:360px;
         }
 
  }
@@ -156,11 +178,16 @@
                 box-shadow:none;
                 margin-top:0;
         }
-
-        .social-icons
+        .footer-left,
+        .footer-center
         {
-                margin-left: 6rem;
+                 border-right:none;
+                border-bottom:1px solid white;
+                 min-height:360px;
         }
+
+
+        
        
         
    }
