@@ -3,6 +3,16 @@
 
 @media  (min-width: 1200px)
  {
+          .hero-image h1,h2
+         {
+              font-size:8rem;
+             
+         }
+         .hero-image p
+         {
+                 font-size:3rem;
+                 font-weight:900;
+         }
 
        .list-item
         {
@@ -21,6 +31,16 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) 
 {
+         .hero-image h1,h2
+         {
+              font-size:7rem;
+              font-weight:900;   
+         }
+         .hero-image p
+         {
+                 font-size:3rem;
+                 font-weight:900;
+         }
         
         .log-reg-btn
         {
@@ -37,6 +57,17 @@
 
  @media (max-width:1078px)
  {
+         .hero-image h1,h2
+         {
+              font-size:6rem;
+                
+         }
+         .hero-image p
+         {
+                 font-size:3rem;
+                 font-weight:900;
+         }
+
           .log-reg-btn
         {
                 margin-left:40px;
@@ -113,7 +144,15 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) 
 {
-       
+         .hero-image
+        {
+                padding-top:10rem;
+        }
+        .hero-image h1,h2
+         {
+              font-size:4.9rem;
+              font-weight:900;   
+         }
        .log-reg-btn
         {
                  margin-top:20px;
@@ -138,7 +177,19 @@
 
 @media (max-width: 575.98px)
  {
-
+        .hero-image
+        {
+                padding-top:10rem;
+        }
+         .hero-image h1,h2
+         {
+              font-size:4.5rem;
+              font-weight:900;   
+         }
+         .hero-image p
+         {
+                 font-size:3rem;
+         }
                .log-reg-btn
         {
                  margin-top:20px;
@@ -194,6 +245,15 @@
 
 @media (max-width:435px)
 {
+        .hero-image
+        {
+                padding-top:10rem;
+        }
+        .hero-image h1,h2
+         {
+              font-size:4.5rem;
+              font-weight:900;   
+         }
       .about-heading,
       .srch-alphabet,
       .popular-artist-heading 
@@ -205,6 +265,15 @@
 
 @media (max-width:340px)
 {
+        .hero-image
+        {
+                padding-top:10rem;
+        }
+         .hero-image h1,h2
+         {
+              font-size:3.8rem;
+              font-weight:900;   
+         }
    .log-reg-btn
         {
                 margin-left:10px;
@@ -225,4 +294,12 @@
                 font-size:1.3rem;
         }
     
+}
+
+@media only screen and (max-width:285px)
+{
+        .hero-image h1,h2
+        {
+            font-size:3rem; 
+        }
 }
