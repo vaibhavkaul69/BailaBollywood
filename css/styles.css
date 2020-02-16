@@ -40,13 +40,9 @@ body {
     margin-right: 0;
 }
 
-dropdown-menu {
-    width: 50px;
-}
-
 /*Video frame*/
 .video-content {
-    height: 400px;
+    height: 460px;
     width: 100%;
     border: 1px solid #fff;
 }
@@ -58,20 +54,20 @@ dropdown-menu {
 }
 
 .media-heading {
-    border-bottom: 1px solid white;
+    font-weight: 900;;
     padding-bottom: 5px;
     width: 130px;
+    font-size:1rem;
 }
 
 .media {
     color: white;
-    font-size: 900;
     margin: 10px;
 }
 
 .img-101, .img-102, .img-103, .img-104, .img-105, .img-106, .img-107, .img-108, .img-109, .img-110, .img-111, .img-112, .img-113, .img-114, .img-115, .img-116, .img-117, .img-118, .img-119, .img-120 {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 160px;
     box-shadow: 0px 2px 10px 0 #0009;
 }
 
