@@ -203,3 +203,16 @@ body
     background:#fff;
     border:1px solid #e4405f;
 }
+.media-object-ref
+{
+    height:400px;
+    width:400px;
+    display:flex;
+    justify-content:space-around;
+}
+.media-object-ref img
+{
+    height:80px;
+    width:80px;
+   display:inline;
+}

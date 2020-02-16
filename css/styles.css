@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif ;
+}
+
+body {
+    background: url("../images/section-background.jpg");
+}
+
+/*****Navbar header****/
+#nav-header {
+    padding-right: 0;
+}
+
+.navbar, .navbar-expand-lg, navbar-light {
+    background: linear-gradient(to bottom,rgba(1,1,1,0.8) ,rgba(0, 29, 56, 1) );
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 100;
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    height: 30px;
+    width: 30px;
+    content: url('../images/navbar-toggler-icon.png');
+}
+
+.logo-navbar {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-right: 0;
+}
+
+dropdown-menu {
+    width: 50px;
+}
+
+/*Video frame*/
+.video-content {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+/*Music playlist ytb*/
+.pg-con-music-playlist {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.media-heading {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    width: 130px;
+}
+
+.media {
+    color: white;
+    font-size: 900;
+    margin: 10px;
+}
+
+.img-101, .img-102, .img-103, .img-104, .img-105, .img-106, .img-107, .img-108, .img-109, .img-110, .img-111, .img-112, .img-113, .img-114, .img-115, .img-116, .img-117, .img-118, .img-119, .img-120 {
+    height: 80px;
+    width: 80px;
+    box-shadow: 0px 2px 10px 0 #0009;
+}
+
+/* Footer */
+.footer-section
+{
+    width:100%;
+    min-height:50px;
+    background:rgba(0, 29, 56, 1);
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+.footer-section img
+{
+    height:30px;
+    width:30px;
+}

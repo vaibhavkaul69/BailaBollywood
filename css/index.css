@@ -109,23 +109,20 @@ body
     background:#fff;
     
 }
-.indian_dance-history,
+.indian_dance-music-history,
 .about_us-paragraph
 {
     font-size:1.2rem;
     font-weight:bolder;
     text-align: justify;
 }
-.about_us-paragraph
+.indian_dance-music-history strong,
+.about_us-paragraph strong
 {
-    letter-spacing:1px;
-    word-spacing:2px;
+    color:blue;
+   font-weight:900;
 }
 
-.indian_dance-history strong
-{
-    font-size: 1.8rem;
-}
 .traditional-dance-img
 {
     height:200px;
