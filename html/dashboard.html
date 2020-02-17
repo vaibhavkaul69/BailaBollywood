@@ -16,6 +16,19 @@
 
 	<!-- styles -->
 	<link href="../css/styles.css" rel="stylesheet">
+
+	<script>
+		window.fbAsyncInit = function() {
+		  FB.init({
+			appId            : 'your-app-id',
+			autoLogAppEvents : true,
+			xfbml            : true,
+			version          : 'v6.0'
+		  });
+		};
+	  </script>
+	  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+	  <script async defer  crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
     
   </head>
   <body>
@@ -43,189 +56,137 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="pg-con-video-player col-xl-8 col-lg-8 col-md-8">
-				<iframe class="video-content" name="videoScreenPlayer" id="VideoContent" src="../images/loader.mp4" loop autoplay allowfullscreen ></iframe>
+				<iframe class="video-content-frame hide-scrollbar" name="videoScreenPlayer" id="VideoContent"  allowfullscreen ></iframe>
+			
+				<!--
+				<div class="img-data-show ">
+					<div class="media p-5 music-video-101 border border-danger">
+						<img class="img-101 mr-3 " src="../images/khairiyat.png" alt="Generic placeholder image">
+						<div class="media-body">
+						  <a class="mt-0 media-heading text-white " target="videoScreenPlayer" href="https://www.youtube.com/embed/hoNb6HuNmU0"> KHAIRIYAT (BONUS TRACK) </a>
+						  <p class="mt-1 display-6">
+							  Here is the video description which will concist of description of video.
+						 </p>
+						</div>
+					  </div>
+				</div>
+				-->
+				<!--Facebook comment box-->
+				<div  id="fb-root"></div>
+					
+				<div class="fb-comments " data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
 			</div>
-
-			<div class="col-xl-4 col-lg-4 col-md-4 pg-con-music-playlist">
-				<div class="media music-video-101">
+			<!---Music playlist on the right side----->
+			<div class="col-xl-4 col-lg-4 col-md-4 pg-con-music-playlist hide-scrollbar">
+				<div class="media music-video-101 mb-5 ">
 					<img class="img-101 mr-3" src="../images/khairiyat.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <a class="mt-0 media-heading text-white" target="videoScreenPlayer" href="https://www.youtube.com/embed/hoNb6HuNmU0"> KHAIRIYAT (BONUS TRACK) </a>
-					  <p class="mt-1 display-6">
-						  Here is the video description which will concist of description of video.
-					 </p>
+					  <a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/hoNb6HuNmU0"> KHAIRIYAT (BONUS TRACK) </a>
+					  
 					</div>
 				  </div>
-				  <div class="media music-video-102">
+				  <div class="media music-video-102 mb-5">
 					<img class="img-102 mr-3" src="../images/jaan-nisar.png" alt="Generic placeholder image">
 					<div class="media-body">
-						<a class="mt-0 media-heading text-white" target="videoScreenPlayer" href="https://www.youtube.com/embed/za4Q_7gYyS4">Kedarnath-Jaan Nisaar </a>
-					  <p class="mt-1 display-6">
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/za4Q_7gYyS4">Kedarnath-Jaan Nisaar </a>
+					  
 					</div>
 				  </div>
-				  <div class="media music-video-103">
-					<img class="img-103 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-103 mb-5">
+					<img class="img-103 mr-3" src="../images/chand-sifarish.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/zWEOx7TSM6I">Chaand Sifarish </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-104">
-					<img class="img-104 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-104 mb-5">
+					<img class="img-104 mr-3" src="../images/dil-hi-toh-hai.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/Lw8k4hYGVk">Dil Hi Toh Hai </a>
+					    
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-105">
-					<img class="img-105 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-105 mb-5">
+					<img class="img-105 mr-3" src="../images/duji-vaari-pyaar.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-106">
-					<img class="img-106 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-106 mb-5">
+					<img class="img-106 mr-3" src="../images/khamoshiyan.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/Mv3SZDP7QUo">Khamoshiyan</a>
+					    
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-107">
-					<img class="img-107 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-107 mb-5">
+					<img class="img-107 mr-3" src="../images/kuch-dino-se.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-108">
-					<img class="img-108 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-108 mb-5">
+					<img class="img-108 mr-3" src="../images/mann-bharya.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-109">
-					<img class="img-109 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-109 mb-5">
+					<img class="img-109 mr-3" src="../images/kalank.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-110">
-					<img class="img-110 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-110 mb-5">
+					<img class="img-110 mr-3" src="../images/kadar.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-111">
-					<img class="img-111 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-111 mb-5">
+					<img class="img-111 mr-3" src="../images/sapna-jahan.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-112">
-					<img class="img-112 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-112 mb-5">
+					<img class="img-112 mr-3" src="../images/tu-haqeqat.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-113">
-					<img class="img-113 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-113 mb-5">
+					<img class="img-113 mr-3" src="../images/tu-har-lamha.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-114">
-					<img class="img-114 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-114 mb-5">
+					<img class="img-114 mr-3" src="../images/zehnaseeb.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-115">
-					<img class="img-115 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
+				  <div class="media music-video-115 mb-5">
+					<img class="img-115 mr-3" src="../images/zero.png" alt="Generic placeholder image">
 					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
+						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
+					    
 					</div>
 				  </div>
-				  <div class="media music-video-116">
-					<img class="img-116 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
-					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
-					</div>
-				  </div>
-				  <div class="media music-video-117">
-					<img class="img-117 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
-					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
-					</div>
-				  </div>
-				  <div class="media music-video-118">
-					<img class="img-118 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
-					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
-					</div>
-				  </div>
-				  <div class="media music-video-119">
-					<img class="img-119 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
-					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
-					</div>
-				  </div>
-				  <div class="media music-video-120">
-					<img class="img-120 mr-3" src="../images/dummy-image.png" alt="Generic placeholder image">
-					<div class="media-body">
-					  <h5 class="mt-0 media-heading">Media heading</h5>
-					  <p>
-						  Here is the video description which will concist of description of video.
-					 </p>
-					</div>
+				  
 				  </div>
 				  
 			</div>
@@ -243,6 +204,10 @@
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		   <!--custom javascript files-->
 		  <script src="../scripts/sticky-navbar.js"></script>
+		  <script>
+			var stateObj;
+			history.pushState(stateObj, "page without extension", "dashboard");
+		  </script>
    
   </body>
 </html>
