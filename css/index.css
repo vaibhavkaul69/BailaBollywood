@@ -127,12 +127,44 @@ body
   {
       width:100%;
       height:300px;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .blog-name,
+  .blog-date
+  {
+      position: absolute;
+      z-index: 3;
+      padding:5px;
+      color:white;
+      text-align:center;
+      display: none;
+      bottom:0;
+      font-weight:900;
+  }
+
+  .overlay-blog
+  {
+      position:absolute;
+      z-index:2;
+      background:linear-gradient(to  bottom,rgba(1,1,1,0.5),rgba(0, 29, 56, 0.8));
+      width:100%;
+      top:0;
+      height: 100%;
+      display:none;
+      
   }
   .swiper-slide:hover
   {
       border:1px solid rgba(0, 29, 56, 1);
       box-shadow: 0 0 8px 0 rgba(0, 29, 56, 1);
+  }
+  .swiper-slide:hover .blog-name,
+  .swiper-slide:hover .blog-date,
+  .swiper-slide:hover .overlay-blog
+  {
+      display: block;
+
   }
   .swiper-slide:hover img
   {
