@@ -19,6 +19,10 @@
         
          <!----------------------------Navbar Css Files---------------------->
        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+       <!-- Swiper css initialized-->
+       <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+       <!-- Swiper javascript initialized-->
+       <script src="scripts/swiper.min.js"></script>
         <!-------------Css file of index.html-------------------------->
         <link rel="stylesheet" type="text/css" href="css/index.css">
 
@@ -27,6 +31,8 @@
 
         <!------------------Social Media Icons------------------------>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
 </head>
     <body>
 
@@ -265,6 +271,7 @@
 
        <!---------------------Alphabet Search Section-Three-------------------------->
         
+       <!--
  <section class="baila-section section-three mt-2" >
     <div class="container">
         <h2 class="srch-alphabet display-2 text-center ">Buscar Por Alfabeto</h2>
@@ -314,6 +321,41 @@
   </a>
   <a id="pop-categ">
   </section>
+-->
+
+<div class="section-5 review-slider">
+  <h1 class="section-heading mx-5 mt-5 ml-5 mb-5 display-3 text-center">Our Blogs</h1>
+  <div class="swiper-container container swiper-reviews">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide">
+        <a href="https://medium.com/@bailabollywood20/namastey-bollywood-un-enfoque-en-bollywood-y-la-percepci%C3%B3n-extranjera-faa12607f601" target="_blank"> <img class="review-image" src="images/video-frame-img.jpeg"></a>
+      </div>
+      <div class="swiper-slide">
+        <img class="review-image" src="images/dummy-image.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="review-image" src="images/dummy-image.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="review-image" src="images/dummy-image.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="review-image" src="images/dummy-image.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="review-image" src="images/dummy-image.png">
+      </div>
+      
+    </div>
+    <br>
+    <!-- Add Pagination -->
+    
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-btn "></div>
+    <div class="swiper-button-prev swiper-btn"></div>
+  </div>
+</div>
+<div class="swiper-pagination position-relative mx-auto "></div>
 
   <!----------------- Most Popular Categories Section-4----------------->
 
@@ -399,7 +441,7 @@
       <div class="container-fluid">
         <div class="row footer-row">
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 footer-left ">
-            <img class="footer-logo mt-5" src="images/spanish-bolo.png">
+           <a href="https://www.spanishbolo.com/" target="_blank"> <img class="footer-logo mt-5" src="images/spanish-bolo.png"></a>
             <p class="text-white text-center mt-3">A Unit of Videshi Bhasa Bolo Foundation. We offer Spanish for IG, IB, ICSE & CBSE, and also on-demand customised Spanish classes for MNCs in Hyderabad. Since, we specialised in Spanish we also take care of quality translation and interpretation service across India. </p>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 footer-center">
@@ -433,6 +475,43 @@
     <script>
       var stateObj;
       history.pushState(stateObj, "page without extension", "index");
+      var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+
+      300: {
+          slidesPerView: 1,
+        spaceBetween: 2,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    }
+    
+  });
     </script>
    
 </html>
