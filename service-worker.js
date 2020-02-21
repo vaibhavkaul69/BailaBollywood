@@ -1,6 +1,5 @@
-const staticBailaBollywood = "baila-bollywood-v1"
+const staticBailaBollywood = "baila-site"
 const assets = [
-  "/",
   "index.html",
   "css/all.min.css",
   "css/fontawesome.min.css",
@@ -46,7 +45,7 @@ const assets = [
   "images/sapna-jahan.png",
   "images/section-background.jpg",
   "images/Spanish-bolo-natraj-transparent.png",
-  "images.spanish-bolo.png",
+  "images/spanish-bolo.png",
   "images/spanish-man.gif",
   "images/tu-haqeqat.png",
   "images/tu-har-lamha.png",

@@ -31,7 +31,8 @@
 
         <!------------------Social Media Icons------------------------>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="manifest" href="manifest.json">
+      <link rel="manifest" href="manifest.json" />
+      <meta name="theme-color" content="#373B44" />
         
 </head>
     <body>
@@ -471,7 +472,7 @@
     <!--------------------------------------local Javascrpt files--------------------------------------------------------->
     <script src="scripts/sticky-navbar.js"></script>
     <script src="scripts/spanish-to-english-translate.js"></script>
-    <script src="check-service-worker.js"></script>
+  
    <!-------------------------bootstrap javascript----------------------------->
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -479,8 +480,17 @@
     </body>
     
     <script>
-      var stateObj;
-      history.pushState(stateObj, "page without extension", "index");
+      if ("serviceWorker" in navigator) 
+  {
+    window.addEventListener("load", function() 
+    {
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+    })
+  }
+      
       var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 0,
