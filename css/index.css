@@ -13,6 +13,7 @@ body
     width:100%;
 }
 
+/*Background image for section 1*/
 .hero-image-icon
 {
     height:200px;
@@ -42,6 +43,7 @@ body
 {
     font-size:3rem;
 }
+/*Contact us box modal*/
 .modal-header
 {
     box-shadow:0px 0px 25px 0px;
@@ -51,6 +53,7 @@ body
     font-size:2.1em;
     font-weight:900;
 }
+/*From labels*/
 .name-label,
 .email-label,
 .subject-label
@@ -71,6 +74,7 @@ body
     height:60px;
     border:1px solid #373B44;
 }
+/*All sections common property*/
 .section-one,
 .section-two,
 .section-three,
@@ -103,10 +107,6 @@ body
     overflow:hidden;
   }
   .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    overflow:hidden;
-    background:transparent;
     position:relative;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -127,49 +127,72 @@ body
   {
       width:100%;
       height:300px;
-      transition: all 0.3s ease-in-out;
+      
   }
   
   .blog-name,
   .blog-date
   {
-      position: absolute;
+       transform:translateY(200px);
       z-index: 3;
       padding:5px;
       color:white;
-      text-align:center;
-      display: none;
       bottom:0;
       font-weight:900;
+      transition: all 0.3s ease-in-out 0s;
+      position: absolute;
+      text-align: center;
+       opacity: 0;
+      transition: all 0.5s ease-in-out 0s;
   }
+  .medium-blog-link
+  {
+      position:absolute;
+      z-index:3;
+      padding:5px;
+      top:200px;
+      font-size:2rem;
+      text-align:center;
+       
+  }
+  .swiper-slide:hover .medium-blog-link
+  {
+      color:#fff;
+      border:1px solid rgba(0, 29, 56, 1); 
+      background:rgba(0, 29, 56, 1);
+  }
+
 
   .overlay-blog
   {
       position:absolute;
       z-index:2;
-      background:linear-gradient(to  bottom,rgba(1,1,1,0.5),rgba(0, 29, 56, 1));
+      background:rgba(0, 29, 56, 0.6);
       width:100%;
-      top:0;
       height: 100%;
-      display:none;
+      opacity:0;
+      transition: all 0.3s ease-in-out 0s;
       
   }
+  
   .swiper-slide:hover
   {
       border:1px solid rgba(0, 29, 56, 1);
       box-shadow: 0 0 8px 0 rgba(0, 29, 56, 1);
   }
   .swiper-slide:hover .blog-name,
-  .swiper-slide:hover .blog-date,
+  .swiper-slide:hover .blog-date
+  {
+      opacity: 1;
+      transform:translateY(0px);
+  }
   .swiper-slide:hover .overlay-blog
   {
-      display: block;
-
+      opacity: 1;
+      width:100%;
+      height:100%;
   }
-  .swiper-slide:hover img
-  {
-      transform: scale(1.2);
-  }
+  
   .swiper-btn
   {
       background:#0009;

@@ -31,7 +31,7 @@
 
         <!------------------Social Media Icons------------------------>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+      <link rel="manifest" href="manifest.json">
         
 </head>
     <body>
@@ -330,13 +330,13 @@
       <div class="swiper-slide">
          <img class="review-image" src="images/namaste-bollywood-medium.jpeg"></a>
         <div class="overlay-blog"></div>
-        <a href="https://medium.com/@bailabollywood20/namastey-bollywood-un-enfoque-en-bollywood-y-la-percepci%C3%B3n-extranjera-faa12607f601" style=" text-decoration:none; color:white;" class="blog-name mb-5" target="_blank"><h4 >Namaste Bollywood</h4></a>
+        <a href="https://medium.com/@bailabollywood20/namastey-bollywood-un-enfoque-en-bollywood-y-la-percepci%C3%B3n-extranjera-faa12607f601" style=" text-decoration:none; color:white; font-size: 2rem;" class="blog-name  mb-5" target="_blank">Namaste Bollywood</a>
         <p class="blog-date mt-5">Date Added:18 / 02 / 2020 </p>
       </div>
       <div class="swiper-slide">
         <img class="review-image" src="images/medium-article.jpeg">
         <div class="overlay-blog"></div>
-        <a href="https://medium.com/@bailabollywood20/namastey-bollywood-un-enfoque-en-bollywood-y-la-percepci%C3%B3n-extranjera-faa12607f601" style=" text-decoration:none; color:white;" class="blog-name mb-5" target="_blank"><h4 >Una cercanía lejana: Bollywood y España</h4></a>
+        <a href="https://medium.com/@bailabollywood20/namastey-bollywood-un-enfoque-en-bollywood-y-la-percepci%C3%B3n-extranjera-faa12607f601" style=" text-decoration:none; color:white; font-size: 2rem;" class="blog-name mb-5" target="_blank">Una cercanía lejana: Bollywood y España</a>
         <p class="blog-date mt-5">Date Added: 20 / 02 / 2020</p>
       </div>
       <div class="swiper-slide">
@@ -346,23 +346,10 @@
         <img class="review-image" src="images/la-musica.jpeg">
       </div>
       <div class="swiper-slide">
-        <div class="overlay-blog"></div>
-        <h4 class="blog-name mb-5">Dummy Blog Name</h4>
-        <p class="blog-date mt-5">Date Added: XX / XX / XXXX</p>
-        <img class="review-image" src="images/dummy-image.png">
+        <a href="https://medium.com/@bailabollywood20" style=" text-decoration:none; " class= "medium-blog-link mb-5 btn btn-light " target="_blank">Show More</a>
+        <img class="review-image" src="images/video-frame-img.jpeg">
       </div>
-      <div class="swiper-slide">
-        <div class="overlay-blog"></div>
-        <h4 class="blog-name mb-5">Dummy Blog Name</h4>
-        <p class="blog-date mt-5">Date Added: XX / XX / XXXX</p>
-        <img class="review-image" src="images/dummy-image.png">
-      </div>
-      <div class="swiper-slide">
-        <div class="overlay-blog"></div>
-        <h4 class="blog-name mb-5">Dummy Blog Name</h4>
-        <p class="blog-date mt-5">Date Added:XX / XX / XXXX<</p>
-        <img class="review-image" src="images/dummy-image.png">
-      </div>
+     
       
     </div>
     <br>
@@ -484,6 +471,7 @@
     <!--------------------------------------local Javascrpt files--------------------------------------------------------->
     <script src="scripts/sticky-navbar.js"></script>
     <script src="scripts/spanish-to-english-translate.js"></script>
+    <script src="check-service-worker.js"></script>
    <!-------------------------bootstrap javascript----------------------------->
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -497,8 +485,6 @@
     slidesPerView: 3,
     spaceBetween: 0,
     slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -511,9 +497,13 @@
     },
     breakpoints: {
 
-      300: {
+      250: {
           slidesPerView: 1,
         spaceBetween: 2,
+      },
+      450:{
+        slidesPerView:2,
+        spaceBetween:2,
       },
       600: {
         slidesPerView: 2,
