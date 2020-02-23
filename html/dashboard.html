@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 	  <meta charset="UTF-8">
     <title>User Dashboard</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="../images/Spanish-bolo-natraj-transparent.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="../images/Spanish-bolo-natraj-transparent.png" />
     <!---------------Bootstrap Stylesheet---------------------------------------->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
 	<!---------------------------Google Fonts----------------------------------------->
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
 	<!------------------Font Awesome Icons----s-------------------->
 	<script src="../scripts/all.min.js"></script>
 	<script src="../scripts/fontawesome.min.js"></script>
@@ -20,9 +20,9 @@
 	   <!--Web app manfest file for android devices-->
 		 <link rel="manifest" href="../manifest.json" />
 		 <meta name="theme-color" content="#373B44" />
-
+		
 	<!-- styles -->
-	<link href="../css/styles.css" rel="stylesheet">
+	<link href="../css/styles.css" rel="stylesheet" />
 
 	<script>
 		window.fbAsyncInit = function() {
@@ -36,34 +36,32 @@
 	  </script>
 	  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 	  <script async defer  crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
-    
+	  <link rel="stylesheet" href="../css/responsive-breakpoints.css" />
   </head>
   <body>
   <div class="header  sticky-top ">
-	<nav id="nav-header" class="navbar navbar-expand-sm collapse navbar-collapse justify-content-between   ">
-		<a class="navbar-brand" href="../index.html"><img src="../images/Spanish-bolo-natraj-transparent.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
-		<button class="navbar-toggler  mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
+	<nav id="nav-header" class="justify-content-between navbar">
+		<a class="navbar-brand" href="../index.html"><img src="../images/Spanish-bolo-natraj-transparent.png" class="logo-navbar-left" alt="Logo Of Baila Bollywood"></a>
+		<a class="navbar-brand" href="../index.html"><img src="../images/baila-bollywood-transparent.png" class="logo-navbar-middle" alt="Logo Of Baila Bollywood"></a>
+		<div class="dropdown mr-5">
+			<button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton" style=" background-color: transparent;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  My Account
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			  <a class="dropdown-item" href="#">Logout</a>
+			  <a class="dropdown-item" href="my-playlist.html" target="_top">My Playlist</a>
+			</div>
+		  </div>
 	  
-		<div class="  mr-5  " id="navbarSupportedContent">
-		  <ul class="nav navbar-nav">
-				<div class="dropdown">
-				  <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown">My Account <b class="caret"></b></a>
-				  <ul  class="dropdown-menu ">
-					<li><a href="#" class="m-3 text-danger">Logout</a></li>
-				  </ul>
-				</div>
-			  </ul>
-		</div>
 	  </nav>
 </div>
 
 <div class="page-content mt-5">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="pg-con-video-player col-xl-8 col-lg-8 col-md-8">
-				<iframe class="video-content-frame hide-scrollbar" name="videoScreenPlayer" id="VideoContent"  allowfullscreen ></iframe>
+			<div class="pg-con-video-player col-xl-8 col-lg-8  ">
+				
+				<iframe class="video-content-frame hide-scrollbar" name="videoScreenPlayer" src="../images/dashboard-frame-image.jpg" id="VideoContent"  allowfullscreen ></iframe>
 			
 				<!--
 				<div class="img-data-show ">
@@ -79,123 +77,132 @@
 				</div>
 				-->
 				<!--Facebook comment box-->
-				<div  id="fb-root"></div>
-					
-				<div class="fb-comments " data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
+				<button class="btn btn-danger show-comments mt-5  w-100 mb-5">Show Comments</button>
+			<div class="show-facebook-comments">
+				<div  id="fb-root "></div>
+				<div class="fb-comments  " data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
+			</div>
 			</div>
 			<!---Music playlist on the right side----->
-			<div class="col-xl-4 col-lg-4 col-md-4 pg-con-music-playlist hide-scrollbar">
-				<div class="media music-video-101 mb-5 ">
-					<img class="img-101 mr-3" src="../images/khairiyat.png" alt="Generic placeholder image">
-					<div class="media-body">
-					  <a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/hoNb6HuNmU0"> KHAIRIYAT (BONUS TRACK) </a>
-					  
+			<div class="col-xl-4 col-lg-4   pg-con-music-playlist hide-scrollbar">
+			
+					<div class="row music-playlist-row ">
+				<div class=" music-video-101 col-6 mb-5 ">
+					<a class="mt-0 media-heading" target="videoScreenPlayer" id="link-101" href="https://www.youtube.com/embed/hoNb6HuNmU0">
+					<img class="img-music mr-3" id="img-101" src="../images/khairiyat.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-101">
+					 KHAIRIYAT 
+					</a>
+					<!-- Add the current song to your playlist-->
+					<button onclick="addplay101()" class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-102 mb-5">
-					<img class="img-102 mr-3" src="../images/jaan-nisar.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/za4Q_7gYyS4">Kedarnath-Jaan Nisaar </a>
-					  
+				  <div class=" music-video-102 col-6 mb-5">
+					<a class="mt-0 media-heading "id="link-102" target="videoScreenPlayer" href="https://www.youtube.com/embed/za4Q_7gYyS4">
+					<img class="img-music  mr-3" id="img-102" src="../images/jaan-nisar.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-102">
+						Jaan Nisaar
+					 </a>
+					  <!-- Add the current song to your playlist-->
+					<button onclick="addplay102()"class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-103 mb-5">
-					<img class="img-103 mr-3" src="../images/chand-sifarish.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/zWEOx7TSM6I">Chaand Sifarish </a>
-					    
+				</div>
+				<div class="row music-playlist-row">
+				  <div class=" music-video-103 col-6 mb-5">
+					<a class="mt-0 media-heading "id="link-103" target="videoScreenPlayer" href="https://www.youtube.com/embed/zWEOx7TSM6I">
+					<img class="img-music  mr-3" id="img-103" src="../images/chand-sifarish.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-103">
+						Chaand Sifarish
+					 </a>
+					 <!-- Add the current song to your playlist-->
+					<button onclick="addplay103()"class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-104 mb-5">
-					<img class="img-104 mr-3" src="../images/dil-hi-toh-hai.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/Lw8k4hYGVk">Dil Hi Toh Hai </a>
-					    
-					    
+				  <div class=" music-video-104 col-6 mb-5">
+					<a class="mt-0 media-heading "id="link-104" target="videoScreenPlayer" href="https://www.youtube.com/embed/Lw8k4hYGVk">
+					<img class="img-music mr-3" id="img-104" src="../images/dil-hi-toh-hai.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-104">
+						Dil Hi Toh Hai 
+					</a>
+					<!-- Add the current song to your playlist-->
+					<button onclick="addplay104()" class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-105 mb-5">
-					<img class="img-105 mr-3" src="../images/duji-vaari-pyaar.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">Duji Vaari Pyaar </a>
-					    
-					    
+				</div>
+				<div class="row music-playlist-row">
+				  <div class="col-6 music-video-105 mb-5">
+					<a class="mt-0 media-heading"id="link-105" target="videoScreenPlayer" href="https://www.youtube.com/embed/ktf4y-sYboE">
+						<img class="img-music mr-3" id="img-105" src="../images/duji-vaari-pyaar.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-105">
+						Duji Vaari Pyaar 
+					</a>
+					<!-- Add the current song to your playlist-->
+					<button onclick="addplay105()" class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
+				  </div>
+				  </div>
+				  <div class="col-6 music-video-106 mb-5">
+					<a class="mt-0 media-heading "id="link-106" target="videoScreenPlayer" href="https://www.youtube.com/embed/Mv3SZDP7QUo">
+					<img class="img-music  mr-3" id="img-106" src="../images/khamoshiyan.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-106">
+						Khamoshiyan
+					</a>
+					<!-- Add the current song to your playlist-->
+					<button onclick="addplay106()" class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
+				</div>
+				  </div>
+			
+				</div>
+				<div class="row music-playlist-row">
+				  <div class=" col-6 music-video-107 mb-5">
+					<a class="mt-0 media-heading "id="link-107" target="videoScreenPlayer" href="https://www.youtube.com/embed/fbdxYoFb64g">
+					<img class="img-music  mr-3" id="img-107" src="../images/kuch-dino-se.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-107">
+						Abhi Kuch Dino Se 
+					</a>
+					    <!-- Add the current song to your playlist-->
+					<button onclick="addplay107()" class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-106 mb-5">
-					<img class="img-106 mr-3" src="../images/khamoshiyan.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/Mv3SZDP7QUo">Khamoshiyan</a>
-					    
-					    
+				  <div class=" col-6 music-video-108 mb-5">
+					<a class="mt-0 media-heading "id="link-108" target="videoScreenPlayer" href="https://www.youtube.com/embed/YrUqw7uspKg">
+					<img class="img-music  mr-3" id="img-108" src="../images/mann-bharya.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-108">
+						Mann Bharya 
+					</a>
+					    <!-- Add the current song to your playlist-->
+					<button onclick="addplay108()" class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-107 mb-5">
-					<img class="img-107 mr-3" src="../images/kuch-dino-se.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/fbdxYoFb64g">Abhi Kuch Dino Se </a>
-					    
+				</div>
+				<div class="row music-playlist-row">
+				  <div class="col-6 music-video-109 mb-5">
+					<a class="mt-0 media-heading " id="link-109"target="videoScreenPlayer" href="https://www.youtube.com/embed/Grr0FlC8SQA">
+					<img class="img-music  mr-3" id="img-109" src="../images/kalank.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-109">
+						Kalank 
+					</a>
+					    <!-- Add the current song to your playlist-->
+					<button onclick="addplay109()" class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-108 mb-5">
-					<img class="img-108 mr-3" src="../images/mann-bharya.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/YrUqw7uspKg">Mann Bharya </a>
-					    
+				  <div class="col-6 music-video-110 mb-5">
+					<a class="mt-0 media-heading " id="link-110" target="videoScreenPlayer" href="https://www.youtube.com/embed/BgrJ4k5FtE">
+					<img class="img-music  mr-3" id="img-110" src="../images/kadar.png" alt="Generic placeholder image" />
+					<div class="media-body" id="song-name-110">
+						Kadar
+					 </a>
+					    <!-- Add the current song to your playlist-->
+					<button onclick="addplay110()"class="font-weight-bold text-white add-to-playlist btn bg-danger ">&#43; &nbsp;Add to Favourites</button> 
 					</div>
 				  </div>
-				  <div class="media music-video-109 mb-5">
-					<img class="img-109 mr-3" src="../images/kalank.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/Grr0FlC8SQA">Kalank-Title Track </a>
-					    
-					</div>
-				  </div>
-				  <div class="media music-video-110 mb-5">
-					<img class="img-110 mr-3" src="../images/kadar.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/BgrJ4k5FtE">Kadar </a>
-					    
-					</div>
-				  </div>
-				  <div class="media music-video-111 mb-5">
-					<img class="img-111 mr-3" src="../images/sapna-jahan.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/lHJp_3g2MAI">Sapna Jahan</a>
-					    
-					</div>
-				  </div>
-				  <div class="media music-video-112 mb-5">
-					<img class="img-112 mr-3" src="../images/tu-haqeqat.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/x3bJeJDgRJQ">Tu Hi Haqeqat </a>
-					    
-					</div>
-				  </div>
-				  <div class="media music-video-113 mb-5">
-					<img class="img-113 mr-3" src="../images/tu-har-lamha.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/SdGL0qxgZGM">Tu Har Lamha </a>
-					    
-					</div>
-				  </div>
-				  <div class="media music-video-114 mb-5">
-					<img class="img-114 mr-3" src="../images/zehnaseeb.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/WnU0lH6C0EA">Zehnaseeb </a>
-					    
-					</div>
-				  </div>
-				  <div class="media music-video-115 mb-5">
-					<img class="img-115 mr-3" src="../images/zero.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<a class="mt-0 media-heading " target="videoScreenPlayer" href="https://www.youtube.com/embed/VGPmFSB8qVY">Mere Naam Tu </a>
-					    
-					</div>
-				  </div>
-				  
-				  </div>
-				  
+				</div>
+			</div>
+				</div>
+			 </div>
+				</div>
+			</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -211,6 +218,7 @@
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		   <!--custom javascript files-->
 		  <script src="../scripts/sticky-navbar.js"></script>
+		  <script src="../scripts/show-comments.js"></script>
 		  
    
   </body>

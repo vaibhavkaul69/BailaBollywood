@@ -6,6 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Titillium Web', sans-serif ;
+    font-display: fallback;
 }
 body
 {
@@ -471,5 +472,19 @@ body
    transform:scale(1.2);
    
 }
-
+/* Footer */
+.footer-section
+{
+    width:100%;
+    min-height:50px;
+    background:rgba(0, 29, 56, 1);
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+.footer-section img
+{
+    height:30px;
+    width:30px;
+}
 

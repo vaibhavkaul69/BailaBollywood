@@ -6,6 +6,7 @@ const assets = [
   "html/login.html",
   "html/recover-password.html",
   "html/register.html",
+  "html/my-playlist.html",
   "css/all.min.css",
   "css/fontawesome.min.css",
   "css/index.css",
@@ -20,11 +21,13 @@ const assets = [
   "scripts/spanish-to-english-translate.js",
   "scripts/sticky-navbar.js",
   "scripts/swiper.min.js",
+  "scripts/show-comments.js",
   "images/chand-sifarish.png",
   "images/dance-indian.png",
   "images/dil-hi-toh-hai.png",
   "images/duji-vaari-pyaar.png",
   "images/dummy-image.png",
+  "images/heartless.png",
   "images/founder-sir.png",
   "images/header-image-1.png",
   "images/jaan-nisar.png",
@@ -57,6 +60,10 @@ const assets = [
   "images/video-frame-img.jpeg",
   "images/zehnaseeb.png",
   "images/zero.png",
+  "images/baila-bollywood-icon.png",
+  "images/baila-bollywood-transparent.png",
+  "images/dashboard-frame-image.jpg",
+
 ]
 
 self.addEventListener("install", installEvent => {
