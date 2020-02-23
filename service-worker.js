@@ -26,6 +26,7 @@ const assets = [
   "images/dance-indian.png",
   "images/dil-hi-toh-hai.png",
   "images/duji-vaari-pyaar.png",
+  "images/nritya-kala.jpeg",
   "images/dummy-image.png",
   "images/heartless.png",
   "images/founder-sir.png",
