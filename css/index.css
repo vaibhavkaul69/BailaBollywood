@@ -274,10 +274,10 @@ body
     color:white;
 }
 
-.popular-artist
+.popular-artist-videos
 {
-    height:100%;
     width:100%;
+    height:360px;
 }
 .load-more
 {
