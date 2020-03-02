@@ -84,7 +84,8 @@ body
 {
     height: 100vh;
     padding:10px;
-    box-shadow:inset 0px 0px 10px 1.5px rgba(0, 29, 56, 1);
+    border-radius: 20px;
+   background:url("../images/section-background.jpg");
     overflow-y: scroll;
 }
 
@@ -136,6 +137,7 @@ body
     margin-top:10px;
     font-size:1.2rem;
     text-align: center;
+    color: #fff;
 }
 
 .media-heading::before

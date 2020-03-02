@@ -215,5 +215,21 @@ body
 {
     height:80px;
     width:80px;
-   display:inline;
+   display:inline-block;
+}
+
+/* Footer */
+.footer-section
+{
+    width:100%;
+    min-height:50px;
+    background:rgba(0, 29, 56, 1);
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+.footer-section img
+{
+    height:30px;
+    width:30px;
 }
