@@ -11,8 +11,7 @@
 {
     height:100vh;
     width:100%;
-    position:fixed;
-    overflow-y:hidden;
+    overflow:hidden;
     z-index: 999999;
     animation:preloader 1s ease infinite alternate;
     transition: all 0.5s ease ;
@@ -22,13 +21,13 @@
 {
     0%
     {
-        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon.png") no-repeat center;
+        background:rgba(0, 29, 56, 1) url("https://drive.google.com/uc?id=1oLS4dqzQazNT4_T8dKNgoiIe74hDBocS") no-repeat center;
     background-size: 200px 200px;
         transform: scale(1.2);
     }
     100%
     {
-        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon-red.png") no-repeat center;
+        background:rgba(0, 29, 56, 1) url("https://drive.google.com/uc?id=1lxO7wVSujMnPVJ-FEbW8oGFVIBrWGLaC") no-repeat center;
         background-size: 200px 200px;
         transform: scale(1);
     }
@@ -229,7 +228,7 @@
   }
   .section-five
   {
-      background:url("../images/section-background.jpg");
+      background:url("https://drive.google.com/uc?id=1zjSPYS57_pXK_Oh0Tfslubdo_7wharl4");
   }
   
   /*other section*/

@@ -120,6 +120,7 @@ body
 /*Login and registeraton form*/
 .form-control
 {
+    background-color: #fff;;
     height:60px;
     border:1px solid #373B44;
 }
