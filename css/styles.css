@@ -6,7 +6,33 @@
     font-display: fallback;
     
 }
+#loader
+{
+    height:100vh;
+    width:100%;
+    position:fixed;
+    overflow-y:hidden;
+    z-index: 999999;
+    animation:preloader 1s ease infinite alternate;
+    transition: all 0.5s ease ;
+}
 
+@keyframes preloader
+{
+    0%
+    {
+        background:rgba(0, 29, 56, 1) url("https://drive.google.com/uc?id=1oLS4dqzQazNT4_T8dKNgoiIe74hDBocS") no-repeat center;
+    background-size: 200px 200px;
+        transform: scale(1.2);
+    }
+    100%
+    {
+        background:rgba(0, 29, 56, 1) url("https://drive.google.com/uc?id=1lxO7wVSujMnPVJ-FEbW8oGFVIBrWGLaC") no-repeat center;
+        background-size: 200px 200px;
+        transform: scale(1);
+    }
+
+}
 a
 {
     color:rgba(0, 29, 56, 1) !important;

@@ -6,12 +6,33 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Titillium Web', sans-serif ;
-    font-display: fallback;
 }
-body
+#loader
 {
-    overflow-x:hidden;
+    height:100vh;
     width:100%;
+    position:fixed;
+    overflow-y:hidden;
+    z-index: 999999;
+    animation:preloader 1s ease infinite alternate;
+    transition: all 0.5s ease ;
+}
+
+@keyframes preloader
+{
+    0%
+    {
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon.png") no-repeat center;
+    background-size: 200px 200px;
+        transform: scale(1.2);
+    }
+    100%
+    {
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon-red.png") no-repeat center;
+        background-size: 200px 200px;
+        transform: scale(1);
+    }
+
 }
 
 /*Background image for section 1*/
@@ -24,7 +45,7 @@ body
 {
     width:100%;
     height:100vh;
-    background-image:linear-gradient(to right bottom,rgba(1,1,1,0.5),rgba(0, 29, 56, 1)),url("../images/header-image-1.png");
+    background-image:linear-gradient(to right bottom,rgba(1,1,1,0.5),rgba(0, 29, 56, 1)),url("https://drive.google.com/uc?id=1UN3hx_OgJtgjDIUN3E_WfkdJY_P5bPQz");
     background-size:cover;
     border-radius: 0px;
 }
@@ -147,6 +168,7 @@ body
        opacity: 0;
       transition: all 0.5s ease-in-out 0s;
   }
+  
   .medium-blog-link
   {
       position:absolute;
@@ -170,7 +192,7 @@ body
   {
       position:absolute;
       z-index:2;
-      background:rgba(0, 29, 56, 0.6);
+      background-image:linear-gradient(to bottom,rgba(0, 29, 56, 0.6),#0009);
       width:100%;
       height: 100%;
       opacity:0;
@@ -292,6 +314,7 @@ body
     color:white;
 }
 
+/* Founders Note Section*/
 .container-founder-image
 {
     position:relative;
@@ -319,7 +342,7 @@ body
     min-height:100vh;
     flex-direction: column;
     align-items: center;
-    background:linear-gradient(to bottom,rgba(220, 36, 36, 0.6),rgba(1,1,1,0.7)), url("../images/red-forest-bg.jpg");
+    background:linear-gradient(to bottom,rgba(220, 36, 36, 0.6),rgba(1,1,1,0.7)), url("https://drive.google.com/uc?id=1lKWYZyG56HR3WLn2EOTU4nSTdIbyp_K7");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -338,6 +361,45 @@ body
     background:white;
 }
 
+
+.imgBox
+{
+    position:relative;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    height:275px;
+    width:307px;
+}
+.over-img
+{
+    background:rgba(220, 36, 36, 0.5);
+    position:absolute;
+    z-index:100;
+    height:100%;
+    width:305px;
+}
+.txt-over-img
+{
+    position:absolute;
+    color:#fff;
+    z-index:200;
+    bottom:5px;
+    left:5px;
+    font-family:monospace;
+    font-size:1rem;
+    text-align:center;
+    padding:20px;
+}
+.img{
+    transition:all 0.5s ease;
+}
+.imgBox:hover .img
+{
+   transform:scale(1.2);
+   
+}
+/* Footer */
 .footer-row
 {
     min-height:300px;
@@ -435,44 +497,6 @@ body
     }
 }
 
-.imgBox
-{
-    position:relative;
-    overflow:hidden;
-    margin-left:auto;
-    margin-right:auto;
-    height:275px;
-    width:307px;
-}
-.over-img
-{
-    background:rgba(220, 36, 36, 0.5);
-    position:absolute;
-    z-index:100;
-    height:100%;
-    width:305px;
-}
-.txt-over-img
-{
-    position:absolute;
-    color:#fff;
-    z-index:200;
-    bottom:5px;
-    left:5px;
-    font-family:monospace;
-    font-size:1rem;
-    text-align:center;
-    padding:20px;
-}
-.img{
-    transition:all 0.5s ease;
-}
-.imgBox:hover .img
-{
-   transform:scale(1.2);
-   
-}
-/* Footer */
 .footer-section
 {
     width:100%;

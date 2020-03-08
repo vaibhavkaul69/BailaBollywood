@@ -16,8 +16,8 @@
         <!---------------------------Google Fonts----------------------------------------->
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
         <!------------------Font Awesome Icons----s-------------------->
-        <script src="../scripts/all.min.js"></script>
-        <script src="../scripts/fontawesome.min.js"></script>
+        <script defer src="../scripts/all.min.js"></script>
+        <script defer src="../scripts/fontawesome.min.js"></script>
         <!-------------------Custom css files------------------------------->
         <!----------------------------Navbar Css Files---------------------->
        <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
@@ -34,12 +34,12 @@
 
        
 </head>
-    <body>
-
+    <body onload="myloader()">
+      <div id="loader"></div>
       
      <!------------------------------------Navigation Bar Section-One------------------------------------------>
       <nav id="nav-header" class="navbar navbar-expand-lg navbar-light fixed-top sticky-top  ">
-      <a class="navbar-brand" href="../index.html"><img src="../images/Spanish-bolo-natraj-transparent.png" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
+      <a class="navbar-brand" href="../index.html"><img src="https://drive.google.com/uc?id=1xKggmfNIkigJXy6HKUDdFEwIy-uGVjiF" class="logo-navbar" alt="Logo Of Baila Bollywood"></a>
       <button class="navbar-toggler border  mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -124,11 +124,7 @@
             <div class="form-group">
              <h4 class=" google-login p-3"><i class="fab fa-google mr-3 "></i>Login with Google</h4>
             </div>
-            <div class="form-group">
-              <h4 class=" instagram-login p-3"><i class="fab fa-instagram mr-3 "></i>Login with Instagram</h4>
-            </div>
-         
-            </form>
+         s</form>
 
           </div>
           <div class="col-xl-7 col-lg-7   jumbotron login-right-image-content ">
@@ -181,21 +177,28 @@
     Website Made With &hearts; By <a href=" https://www.linkedin.com/in/vaibhav-kaul-ab5941182/" class="text-white mx-1 font-weight-bold" target="_blank" title="Vaibhav's Linkedin Profile">Vaibhav Kaul</a>
     And <a href="https://www.linkedin.com/in/pawan-saggu-06589b157/" class="text-white font-weight-bold mx-1" target="_blank" title="Pawan's Linkedin Profile">Pawan Saggu</a>
    <br/>
-    &copy; 2020 Copyright BailaBollywood<img src="../images/Spanish-bolo-natraj-transparent.png" >
+    &copy; 2020 Copyright BailaBollywood<img src="https://drive.google.com/uc?id=1xKggmfNIkigJXy6HKUDdFEwIy-uGVjiF" >
   </p>
-  <!--------------------------------------local Javascrpt files--------------------------------------------------------->
+   
+    </body>
+    <script>
+      var load = document.getElementById('loader');
+      function myloader()
+      {
+        load.style.display="none";
+      }
+    </script>
+   <!--------------------------------------local Javascrpt files--------------------------------------------------------->
   <script src="../scripts/sticky-navbar.js"></script>
-  
-  
-  
-  <!-------------------------bootstrap javascript----------------------------->
+<!-------------------------bootstrap javascript----------------------------->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      var stateObj;
+      history.pushState(stateObj, "page without extension", "login");
+    </script>
    
-    </body>
-   
-    
     </html>
 
     

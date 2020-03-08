@@ -10,9 +10,7 @@
     
 	<!---------------------------Google Fonts----------------------------------------->
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
-	<!------------------Font Awesome Icons----s-------------------->
-	<script src="../scripts/all.min.js"></script>
-	<script src="../scripts/fontawesome.min.js"></script>
+	
 
 	   <!--Web app manfest file for ios support -->
 	   <link rel="apple-touch-icon" href="../images/baila-bollywood-icon.png" />
@@ -40,7 +38,8 @@
 	  -->
 	  <link rel="stylesheet" href="../css/responsive-breakpoints.css" />
   </head>
-  <body>
+  <body onload="myloader()">
+	  <div id="loader"></div>
   <div class="header   ">
 	<nav id="nav-header" class="justify-content-between navbar">
 		<a class="navbar-brand" href="../index.html"><img src="../images/Spanish-bolo-natraj-transparent.png" class="logo-navbar-left" alt="Logo Of Baila Bollywood"></a>
@@ -62,7 +61,7 @@
 	<div class="container-fluid">
 		<div class="row ">
 			<div class="pg-con-video-player  col-xl-8 col-lg-8  ">
-				<iframe class="video-content-frame " name="videoScreenPlayer" src="../images/dashboard-frame-image.jpg" id="VideoContent"  allowfullscreen >
+				<iframe class="video-content-frame " name="videoScreenPlayer" title="Video Frame For Videos" src="../images/dashboard-frame-image.jpg" id="VideoContent"  allowfullscreen >
 				</iframe>
 				<img src="../images/dance-indian.jpg" class="img-fluid img-dance-indian" alt="Indian Dance Image">
 			</div>
@@ -409,16 +408,28 @@
     &copy; 2019 Copyright BailaBollywood<img src="../images/Spanish-bolo-natraj-transparent.png" alt="Baila Bollywood Icon" >
 </div>
 
+</body>
+<script>
+	var load = document.getElementById('loader');
+	function myloader()
+	{
+	  load.style.display="none";
+	}
+  </script>
+
 		  	<!--Bootstrap js files-->
-		  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		   <!--custom javascript files-->
-		  <script src="../scripts/sticky-navbar.js"></script>
-		  <script src="../scripts/show-comments.js"></script>
-		  
-   
-  </body>
+			  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			   <!--custom javascript files-->
+			  <script src="../scripts/sticky-navbar.js"></script>
+			  <script src="../scripts/show-comments.js"></script>
+			  <script>
+				var stateObj;
+				history.pushState(stateObj, "page without extension", "dashboard");
+			  </script>
+			 
+  
 </html>
 
 
