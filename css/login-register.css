@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Ananda Namaste Regular;
+    src: url("../Ananda Namaste Regular.ttf");
+  }
 *
 {
     padding:0;
@@ -6,6 +10,7 @@
     font-family: 'Titillium Web', sans-serif ;
     font-display: fallback;
 }
+/*
 #loader
 {
     height:100vh;
@@ -32,6 +37,7 @@
     }
 
 }
+*/
 body
 {
     background:url("https://drive.google.com/uc?id=1zjSPYS57_pXK_Oh0Tfslubdo_7wharl4");
@@ -75,6 +81,7 @@ body
 .pass-label,
 .phone-label
 {
+    
     position:relative;
     top:30px;
     left:20px;
