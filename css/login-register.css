@@ -40,7 +40,7 @@
 */
 body
 {
-    background:url("https://drive.google.com/uc?id=1zjSPYS57_pXK_Oh0Tfslubdo_7wharl4");
+    background:url("../images/section-background.jpg");
 }
 
 .container-row
@@ -288,10 +288,11 @@ body
 {
     width:100%;
     min-height:50px;
-    background:rgba(0, 29, 56, 1);
-    color:white;
+    background:linear-gradient(to right ,rgba(255, 95, 109, 1),rgba(247, 183, 51, 1));
+    color:#fff;
     text-align:center;
     padding:10px;
+    font-weight: lighter;
 }
 .footer-section img
 {

@@ -45,8 +45,8 @@
 {
     width:100%;
     height:100vh;
-    background-image:linear-gradient(to right bottom,rgba(1,1,1,0.5),rgba(0, 29, 56, 1)),url("https://drive.google.com/uc?id=1UN3hx_OgJtgjDIUN3E_WfkdJY_P5bPQz");
-    background-size:cover;
+    background-image:linear-gradient(to bottom,rgba(255, 95, 109, 0.5),rgba(247, 183, 51, 0.6)),url("../images/bg-image.jpg");
+    background-size:100% 100%;
     border-radius: 0px;
     font-family: Ananda Namaste Regular;
     
@@ -122,8 +122,13 @@
     height:300px;
 }
 
-/*swiper medium blogs*/
-
+/**********
+swiper medium blogs section-five
+********** */
+.section-five
+  {
+      background:url("../images/section-background.jpg");
+  }
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -227,12 +232,11 @@
       padding:30px;
       color:#fff;
   }
-  .section-five
-  {
-      background:url("https://drive.google.com/uc?id=1zjSPYS57_pXK_Oh0Tfslubdo_7wharl4");
-  }
   
-  /*other section*/
+  
+  /********************** 
+        section-one
+  ********************/
 .section_one-background
 {
     padding:20px;
@@ -243,7 +247,22 @@
 .indian-classical-jumbotron
 {
     background:#fff;
-    
+}
+.dance-music-to-english
+{
+  background:#fff;
+  color:rgba(255, 95, 109, 1);
+  border:1px solid rgba(255, 95, 109, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
+.dance-music-to-spanish
+{
+  background:#fff;
+  color:rgba(247, 183, 51, 1);
+  border:1px solid rgba(247, 183, 51, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
 }
 .indian_dance-music-history,
 .about_us-paragraph
@@ -258,13 +277,31 @@
     height:200px;
     width:300px;
 }
+/************
+  About Baila Bollywood
+  ***********/
 .about-image
 {
     width:300px;
     height:250px;
     shape-outside:circle(50%);
     margin:0 20px 20px 0;
-   
+}
+.spanish-to-english
+{
+  background:#fff;
+  color:rgba(255, 95, 109, 1);
+  border:1px solid rgba(255, 95, 109, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
+.english-to-spanish
+{
+  background:#fff;
+  color:rgba(247, 183, 51, 1);
+  border:1px solid rgba(247, 183, 51, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
 }
 
 .section_two-about-us
@@ -296,6 +333,9 @@
     color:white;
 }
 
+/**********
+  Most Popular Artist
+  **********/
 .popular-artist-videos
 {
     width:100%;
@@ -303,15 +343,19 @@
 }
 .load-more
 {
-    background-image:linear-gradient(to right,#1D4350,#A43931);
+    color:rgba(255, 95, 109, 1);
     font-size:2rem;
+    background:#fff;
     min-width:50px;
+    border:1px solid rgba(255, 95, 109, 1);
      border-radius:50px;
+      box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
 }
 .load-more:hover
 {
-    background:#1D4350;
-    color:white;
+    background:#fff;
+    color:rgba(247, 183, 51, 1);
+    border:1px solid rgba(247, 183, 51, 1);
 }
 
 /* Founders Note Section*/
@@ -342,7 +386,7 @@
     min-height:100vh;
     flex-direction: column;
     align-items: center;
-    background:linear-gradient(to bottom,rgba(220, 36, 36, 0.6),rgba(1,1,1,0.7)), url("https://drive.google.com/uc?id=1lKWYZyG56HR3WLn2EOTU4nSTdIbyp_K7");
+    background:linear-gradient(to bottom,rgba(220, 36, 36, 0.6),rgba(1,1,1,0.7)), url("../images/red-forest-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -404,87 +448,86 @@
 {
     min-height:300px;
     background:rgba(0, 29, 56, 1);
+    
 }
 .footer-left,
 .footer-center,
 .footer-right
 {
+    color:#fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height:100%;
     width:100%;
-    color:white;
-    
 }
 
 .social-icons a
 {
     text-decoration: none;
+    color:rgba(247, 183, 51, 1);
     font-size:2rem;
     padding:15px;
     height:60px;
     width:60px;
-    border:1px solid #fff;
+    border:1px solid rgba(255, 95, 109, 1);
     margin:5px;
-    color:white;
 }
 .fa-facebook:hover
 {
     background: #3b5999;
     border-color:#3b5999;
+    color:#fff;
 }
 .fa-youtube:hover
 {
     background:#cd201f;
     border-color:#cd201f;
+    color:#fff;
 }
 .fa-twitter:hover
 {
     background:#55acee;
     border-color:#55acee;
+    color:#fff;
 }
 .fa-linkedin:hover
 {
     background:#0077B5;
     border-color:#0077B5;
+    color:#fff;
 }
 .fa-instagram:hover
 {
     background:#e4405f;
     border-color:#e4405f;
+    color:#fff;
 }
 .fa-quora:hover
 {
     background:#b92b27;
     border-color:#b92b27;
+    color:#fff;
 }
 .fa-medium:hover
 {
     background:#02b875;
     border-color:#02b875;
-}
-.btn-close
-{
-    background:#b92b27;
     color:#fff;
-    font-weight:900;
-}
-.btn-save
-{
-    background:#3b5999;
-    color:#fff;
-    font-weight:900;
-}
-.footer-right-img
-{
-    height:100px;
-    width:100px;
-    margin-top:7rem;
-    animation:rocket 1s ease infinite alternate;
-    transition:all 0.5s ease;
 }
 
+.footer-right-img
+{
+    height:200px;
+    width:200px;
+    margin-top:7rem;
+    transform: scale(1.6);
+    /*
+    animation:rocket 1s ease infinite alternate;
+    transition:all 0.5s ease;
+    */
+}
+/*
 @keyframes rocket
 {
     0%
@@ -496,15 +539,17 @@
         transform:translateY(0px);
     }
 }
+*/
 
 .footer-section
 {
     width:100%;
     min-height:50px;
-    background:rgba(0, 29, 56, 1);
-    color:white;
+    background:linear-gradient(to right ,rgba(255, 95, 109, 1),rgba(247, 183, 51, 1));
+    color:#fff;
     text-align:center;
     padding:10px;
+    font-weight: lighter;
 }
 .footer-section img
 {

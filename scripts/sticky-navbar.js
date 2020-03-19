@@ -9,7 +9,7 @@
       function myFunction() {
         if (window.pageYOffset >= sticky) {
           navbar.classList.add("sticky");
-          document.getElementById("nav-header").style.background = "rgba(0, 29, 56, 1)";
+          document.getElementById("nav-header").style.background = "#fff";
         } else {
           navbar.classList.remove("sticky");
         }
