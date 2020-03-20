@@ -72,7 +72,7 @@
 }
 .modal-title
 {
-    font-size:2.1em;
+    /* font-size:2.1em; */
     font-weight:900;
 }
 /*From labels*/
@@ -287,7 +287,8 @@ swiper medium blogs section-five
     shape-outside:circle(50%);
     margin:0 20px 20px 0;
 }
-.spanish-to-english
+.spanish-to-english,
+.btn-close
 {
   background:#fff;
   color:rgba(255, 95, 109, 1);
@@ -295,7 +296,8 @@ swiper medium blogs section-five
   box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
   font-weight:bolder;
 }
-.english-to-spanish
+.english-to-spanish,
+.btn-save
 {
   background:#fff;
   color:rgba(247, 183, 51, 1);
@@ -444,6 +446,16 @@ swiper medium blogs section-five
    
 }
 /* Footer */
+/***********
+    Privacy Policy Modal Box
+    **********/
+    .privacy-statement
+{
+    height:500px;
+    overflow-y: scroll;
+    padding:30px;
+    text-align:justify;
+}
 .footer-row
 {
     min-height:300px;
@@ -473,7 +485,7 @@ swiper medium blogs section-five
     border:1px solid rgba(255, 95, 109, 1);
     margin:5px;
 }
-.fa-facebook:hover
+.fa-facebook-f:hover
 {
     background: #3b5999;
     border-color:#3b5999;
@@ -520,7 +532,7 @@ swiper medium blogs section-five
 {
     height:200px;
     width:200px;
-    margin-top:7rem;
+    margin-top:6rem;
     transform: scale(1.6);
     /*
     animation:rocket 1s ease infinite alternate;
